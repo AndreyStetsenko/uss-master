@@ -1,0 +1,378 @@
+// Большие девайсы (xl большие десктопы, >= 1200px)
+@media (min-width: 1200px) {
+
+  .navbar {
+    > .container {
+      padding-left: 30px;
+      padding-right: 15px;
+    }
+  }
+
+}
+
+// Большие девайсы (lg большие десктопы, >= 992px)
+@media (max-width: 1199.98px) {
+
+  .navbar {
+    > .container {
+      padding-left: 30px;
+      padding-right: 15px;
+    }
+  }
+
+}
+
+// Средние девайсы (md «таблетки», >= 768px)
+@media (min-width: 991.98px) {
+  .navbar {
+    .mob-show {
+      display: none;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .navbar-uss {
+    .navbar-brand {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 991.98px) {
+
+  .navbar-uss {
+    &.navbar-fixed {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      // margin-top: 87px;
+
+      + .swiper-container {
+        margin-top: 81px;
+      }
+
+      .navbar-nav {
+        padding: 0;
+        transition: .2s;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    display: block!important;
+    position: absolute;
+    top: 0;
+    left: -400px;
+  }
+
+  .open-nav {
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+
+  .tobar-toggle {
+    display: none;
+  }
+
+  .navbar {
+    > .container {
+      padding-left: 30px;
+      padding-right: 15px;
+    }
+
+    .navbar-nav {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .vacancies {
+    &-form {
+      &--form {
+        .inputs {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          flex-wrap: wrap;
+
+          .form-group {
+            width: 100%;
+          }
+        }
+
+        .form-group-textarea {
+          margin-top: 10px;
+        }
+
+        .btn-vac {
+          width: 100%!important;
+        }
+      }
+    }
+  }
+
+  .services-list {
+    &-item {
+      max-width: calc(100% - 30px);
+      margin: 0px 15px 15px !important;
+
+      &:last-child {
+        margin-bottom: 0!important;
+      }
+    }
+  }
+
+}
+
+// Малые девайсы (sm «ландшафтные», >= 575px)
+@media (min-width: 767.99px) {
+
+  .price-services {
+    &-item {
+      &:hover {
+        margin: 0 25px 50px 25px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  .topbar {
+    .mob-hide {
+      display: none;
+    }
+  }
+
+  .navbar {
+    .navbar-brand {
+      color: #fff;
+      font-weight: 500;
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+
+  .services-h {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .services-links {
+    border: none;
+
+    &__list {
+      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 25px;
+
+      &-item {
+        border-right: none!important;
+        font-size: 16px!important;
+        width: 50%;
+        text-align: left;
+        padding: 8px 10px!important;
+      }
+    }
+  }
+
+  .services-tabs {
+    &-item {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+      &--img {
+        display: flex;
+        flex-direction: column;
+
+        &--btn {
+          display: block;
+        }
+      }
+
+      &__cont {
+        text-align: center;
+        width: 100%;
+
+        &--btn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .home-about {
+    text-align: center;
+    .img-aboutus {
+      display: none;
+    }
+  }
+
+  .swiper-container {
+    height: 50vh;
+  }
+
+  .swiper-button {
+    &-next {
+      right: 25px!important;
+    }
+
+    &-prev {
+      left: 25px!important;
+    }
+
+    &-next, &-prev {
+      width: 35px!important;
+      height: 35px!important;
+
+      &::after {
+        font-size: 14px!important;
+      }
+    }
+  }
+
+  .price-services {
+    &-item {
+      margin: 25px auto;
+    }
+  }
+
+  .why-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 100%;
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .gallery-box-item span {
+    display: flex;
+    flex-direction: column;
+
+    .icon {
+      margin-top: 10px;
+    }
+  }
+
+  .gallery-box {
+    &-item {
+      width: calc(50% - 20px);
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .clients-box {
+    &-item {
+      width: calc(50% - 10px);
+      margin-right: 10px;
+    }
+  }
+
+  .footer-widget {
+    margin-bottom: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-list {
+      max-height: 100%!important;
+    }
+
+    ul {
+      // margin: 0 auto;
+    }
+  }
+
+  .footer-item-widget {
+    &:last-child {
+      .footer-widget {
+        margin: 0;
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .l-separator {
+    border-left: none;
+  }
+
+  .contacts {
+    text-align: center;
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+
+  .gallery-list {
+    &-item {
+      &:hover {
+        box-shadow: none;
+        transform: scale(1);
+      }
+
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      &__body {
+        padding: 35px 25px;
+      }
+
+      &__img {
+        max-height: 180px;
+
+        img {
+          width: 100%;
+          max-height: 180px;
+          height: 100%;
+          border-radius: 5px 5px 0 0;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+}
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+@media (max-width: 575.98px) {
+
+  .navbar {
+    > .container {
+      padding-left: 15px;
+      padding-right: 0;
+    }
+  }
+
+}
