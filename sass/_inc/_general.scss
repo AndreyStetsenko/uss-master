@@ -245,7 +245,7 @@ button:focus {
 
 .navbar-uss {
   background-color: #fff !important;
-  // position: sticky;
+  position: sticky;
   top: 0;
 
   .navbar-nav {
@@ -255,7 +255,7 @@ button:focus {
 
     &.nav-min {
       top: 0!important;
-      // position: sticky!important;
+      position: sticky!important;
       transition: .2s;
       padding-top: 0!important;
       padding-bottom: 0!important;
@@ -717,20 +717,39 @@ button:focus {
 
   &-item {
     width: calc(25% - 15px);
-    max-height: 170px;
+    height: 320px;
     margin-bottom: 25px;
     margin-right: 20px;
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 5px;
+    object-fit: cover;
+
+    img {
+      height: 100%;
+      width: 100%;
+
+      &.img-fluid.rounded {
+        border-radius: 0!important;
+      }
+    }
+
+    span, .flow {
+      display: none!important;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;
     }
 
+    &:last-child {
+      span, .flow {
+        display: flex!important;
+      }
+    }
+
     &.next {
-      border-radius: 5px 0 0 5px;
+      // border-radius: 5px 0 0 5px;
 
       .icon {
         margin-left: 15px;
@@ -1478,7 +1497,7 @@ button:focus {
 
 .sidebar {
   position: sticky;
-  top: 50px;
+  top: 75px;
   // position: sticky;
 }
 
@@ -1516,29 +1535,31 @@ button:focus {
     padding-bottom: 0;
   }
 
-  .widget-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: $uss;
-  }
+  &_nav_menu {
+    .menu-main-container {
+      padding: 25px 20px;
+      background: $l-gray2;
+      border-radius: 3px;
 
-  &.widget_nav_menu {
-    padding: 25px 20px;
-    background: $l-gray2;
-    border-radius: 3px;
+      .widget-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: $uss;
+      }
 
-    .menu {
-      li {
-        padding: 3px 0;
-
-        a {
-          color: $uss;
-          text-decoration: none;
+      .menu {
+        li {
           padding: 3px 0;
-          transition: .2s;
 
-          &:hover {
-            padding-left: 3px;
+          a {
+            color: $uss;
+            text-decoration: none;
+            padding: 3px 0;
+            transition: .2s;
+
+            &:hover {
+              padding-left: 3px;
+            }
           }
         }
       }

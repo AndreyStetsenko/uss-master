@@ -129,6 +129,8 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .owl-prev span,.owl-next span{font-size:24px}
 .owl-prev{left:15px}
 .owl-next{right:15px}
+.owl-item .item{height:calc(100% - 50px)}
+.owl-item .item .price-services-item{height:100%}
 .breadcrumbs{padding:50px 0}
 .breadcrumbs .page-title h1{color:#393838;font-size:28px;font-weight:300}
 .breadcrumbs-cont{font-size:14px;color:#393838;background:#f0f0f0;padding:15px;margin-top:20px;border-radius:3px}
@@ -138,7 +140,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .breadcrumbs-cont--page{font-weight:500}
 .modalPricePack .modal-img img{width:100%;max-width:260px}
 .modalPricePack .modal-content{border-radius:6px;-webkit-box-shadow:4px 4px 5px rgba(0,0,0,0.25);box-shadow:4px 4px 5px rgba(0,0,0,0.25)}
-.modalPricePack .modal-content .modal-header{position:relative;background:#393838;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:15px 35px;text-align:center}
+.modalPricePack .modal-content .modal-header{position:relative;background:#393838;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:15px 40px;text-align:center}
 .modalPricePack .modal-content .modal-header .close{position:absolute;right:25px;color:#fff;font-size:16px;opacity:1;-webkit-transition:.2s;transition:.2s}
 .modalPricePack .modal-content .modal-header .close:hover{opacity:.5}
 .modalPricePack .modal-content .modal-header h5{font-weight:300;font-size:24px;line-height:28px;color:#fff}
@@ -217,9 +219,9 @@ button:focus{outline:0}
 .navbar .navbar-nav .dropdown-menu{margin:0;border:0;border-radius:0}
 .navbar .navbar-nav .dropdown-menu a{font-size:14px;color:#6f6f6f;background:transparent;-webkit-transition:.2s;transition:.2s}
 .navbar .navbar-nav .dropdown-menu a:hover{color:#333}
-.navbar-uss{background-color:#fff !important;top:0}
+.navbar-uss{background-color:#fff !important;position:-webkit-sticky;position:sticky;top:0}
 .navbar-uss .navbar-nav{padding-top:14px;padding-bottom:14px;-webkit-transition:.2s;transition:.2s}
-.navbar-uss .navbar-nav.nav-min{top:0 !important;-webkit-transition:.2s;transition:.2s;padding-top:0 !important;padding-bottom:0 !important}
+.navbar-uss .navbar-nav.nav-min{top:0 !important;position:-webkit-sticky !important;position:sticky !important;-webkit-transition:.2s;transition:.2s;padding-top:0 !important;padding-bottom:0 !important}
 .navbar-uss .navbar-nav li.dropdown>a:after{display:none}
 .navbar-uss .navbar-nav li>a{font-size:16px;padding-left:25px !important;padding-right:25px !important;color:#6f6f6f !important;font-weight:400;-webkit-transition:.2s;transition:.2s}
 .navbar-uss .navbar-nav li>a:focus{outline:0}
@@ -289,9 +291,12 @@ button:focus{outline:0}
 .why-cont-item--text{text-align:center;margin-top:30px;font-size:20px;color:#fff;font-weight:300}
 .home-gallery--footer{text-align:center;margin-top:25px}
 .gallery-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.gallery-box-item{width:calc(25% - 15px);max-height:170px;margin-bottom:25px;margin-right:20px;position:relative;display:block;overflow:hidden;border-radius:5px}
+.gallery-box-item{width:calc(25% - 15px);height:320px;margin-bottom:25px;margin-right:20px;position:relative;display:block;overflow:hidden;-o-object-fit:cover;object-fit:cover}
+.gallery-box-item img{height:100%;width:100%}
+.gallery-box-item img.img-fluid.rounded{border-radius:0 !important}
+.gallery-box-item span,.gallery-box-item .flow{display:none !important}
 .gallery-box-item:nth-child(4n){margin-right:0}
-.gallery-box-item.next{border-radius:5px 0 0 5px}
+.gallery-box-item:last-child span,.gallery-box-item:last-child .flow{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
 .gallery-box-item.next .icon{margin-left:15px;font-size:24px;-webkit-transition:.4s;transition:.4s}
 .gallery-box-item:hover img{-webkit-transform:scale(1.03);transform:scale(1.03)}
 .gallery-box-item:hover .icon{-webkit-transform:scale(1.1);transform:scale(1.1)}
@@ -403,17 +408,17 @@ button:focus{outline:0}
 .about-partners__list--title{text-align:center;font-size:18px;font-weight:500}
 .about-clients .clients-box-item--img{max-width:70%}
 .about-clients .clients-box-item--img img{-webkit-filter:grayscale(0);filter:grayscale(0)}
-.sidebar{position:-webkit-sticky;position:sticky;top:50px}
+.sidebar{position:-webkit-sticky;position:sticky;top:75px}
 .our-services--title{font-size:18px;color:#393838}
 .our-services--list{padding-top:10px;padding-left:5px;list-style:none}
 .our-services--list li a{font-size:14px;color:#393838;text-decoration:none}
 .our-services--list li a:hover{color:#282828}
 .widget:last-child{padding-bottom:0}
-.widget .widget-title{font-size:24px;margin-bottom:10px;color:#393838}
-.widget.widget_nav_menu{padding:25px 20px;background:#f0f0f0;border-radius:3px}
-.widget.widget_nav_menu .menu li{padding:3px 0}
-.widget.widget_nav_menu .menu li a{color:#393838;text-decoration:none;padding:3px 0;-webkit-transition:.2s;transition:.2s}
-.widget.widget_nav_menu .menu li a:hover{padding-left:3px}
+.widget_nav_menu .menu-main-container{padding:25px 20px;background:#f0f0f0;border-radius:3px}
+.widget_nav_menu .menu-main-container .widget-title{font-size:24px;margin-bottom:10px;color:#393838}
+.widget_nav_menu .menu-main-container .menu li{padding:3px 0}
+.widget_nav_menu .menu-main-container .menu li a{color:#393838;text-decoration:none;padding:3px 0;-webkit-transition:.2s;transition:.2s}
+.widget_nav_menu .menu-main-container .menu li a:hover{padding-left:3px}
 .post-footer{max-width:650px;margin:0 auto}
 .post-meta{margin-top:25px}
 .post-meta-item--left{font-weight:500;font-size:14px;color:#393838}
@@ -486,6 +491,8 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .owl-prev span,.owl-next span{font-size:24px}
 .owl-prev{left:15px}
 .owl-next{right:15px}
+.owl-item .item{height:calc(100% - 50px)}
+.owl-item .item .price-services-item{height:100%}
 .breadcrumbs{padding:50px 0}
 .breadcrumbs .page-title h1{color:#393838;font-size:28px;font-weight:300}
 .breadcrumbs-cont{font-size:14px;color:#393838;background:#f0f0f0;padding:15px;margin-top:20px;border-radius:3px}
@@ -495,7 +502,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .breadcrumbs-cont--page{font-weight:500}
 .modalPricePack .modal-img img{width:100%;max-width:260px}
 .modalPricePack .modal-content{border-radius:6px;-webkit-box-shadow:4px 4px 5px rgba(0,0,0,0.25);box-shadow:4px 4px 5px rgba(0,0,0,0.25)}
-.modalPricePack .modal-content .modal-header{position:relative;background:#393838;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:15px 35px;text-align:center}
+.modalPricePack .modal-content .modal-header{position:relative;background:#393838;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:15px 40px;text-align:center}
 .modalPricePack .modal-content .modal-header .close{position:absolute;right:25px;color:#fff;font-size:16px;opacity:1;-webkit-transition:.2s;transition:.2s}
 .modalPricePack .modal-content .modal-header .close:hover{opacity:.5}
 .modalPricePack .modal-content .modal-header h5{font-weight:300;font-size:24px;line-height:28px;color:#fff}
@@ -592,6 +599,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .dropdown-menu a{font-size:14px;color:#6f6f6f;background:transparent;-webkit-transition:.2s;transition:.2s}
 .dropdown-menu a:hover{color:#333}
 #wp-auth-check-wrap #wp-auth-check{position:fixed;left:50%;overflow:hidden;top:40px;bottom:20px;max-height:580px !important;width:500px;margin:0 0 0 -250px;padding:30px 0 0;background-color:#f1f1f1;z-index:1000011;-webkit-box-shadow:0 3px 6px rgba(0,0,0,0.3);box-shadow:0 3px 6px rgba(0,0,0,0.3)}
+#wp-auth-check-wrap #wp-auth-check{width:525px !important}
 .login{background:radial-gradient(50% 50% at 50% 50%,rgba(27,27,27,0) 76.56%,rgba(0,0,0,0.39) 100%),url("https://images.wallpaperscraft.ru/image/derevya_vid_sverkhu_les_119826_2560x1080.jpg") !important}
 .login #login{width:450px}
 .login #login h1 a{background:url("../uss/assets/img/logo.png") no-repeat;background-position:center center}
