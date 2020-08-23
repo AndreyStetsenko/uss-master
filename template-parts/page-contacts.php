@@ -42,25 +42,7 @@
       <div class="col-12 col-md-6 l-separator">
         <div class="contacts contacts-form h-100 all-center">
           <h3>Оставить заявку</h3>
-          <form class="form form-modal form-feedback" action="index.html" method="post">
-
-            <div class="form-group">
-              <input placeholder="Имя" type="text" id="formFeedbackName" required>
-              <label for="formFeedbackName">Имя</label>
-            </div>
-
-            <div class="form-group">
-              <input placeholder="Телефон" type="text" id="formFeedbackPhone" required>
-              <label for="formFeedbackPhone">Телефон</label>
-            </div>
-
-            <div class="form-group">
-              <input placeholder="Email" type="email" id="formFeedbackEmail" required>
-              <label for="formFeedbackEmail">Email</label>
-            </div>
-
-            <a type="a" class="btn btn-gold active">Заказать</a>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="270" title="Контакты"]'); ?>
         </div>
       </div>
     </div>

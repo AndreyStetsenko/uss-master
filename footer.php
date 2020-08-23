@@ -58,7 +58,7 @@
 								</div>
 							</div>
 							<div class="footer-social-btn">
-								<a class="btn btn-gold active" type="a" name="a">Заказать консультацию</a>
+								<a class="btn btn-gold active" type="a" name="a" data-toggle="modal" data-target="#modalConsultation">Заказать консультацию</a>
 							</div>
 						</div>
 					</div>
@@ -71,6 +71,32 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal modalPricePack fade" id="modalConsultation" tabindex="-1" role="dialog" aria-labelledby="modalConsultationLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalConsultationLabel">Оставьте Ваши контактные данные, и наши специалисты свяжутся с Вами в ближайшее время</h5>
+					<a type="a" class="close" data-dismiss="modal" aria-label="Close">
+						<i aria-hidden="true" class="icon fas fa-times"></i>
+					</a>
+				</div>
+				<div class="modal-body">
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+
+								<?php echo do_shortcode('[contact-form-7 id="270" title="Контакты"]'); ?>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="modal modalPricePack fade" id="modalPricePack" tabindex="-1" role="dialog" aria-labelledby="modalPricePackLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg">
@@ -92,29 +118,7 @@
 							</div>
 							<div class="col-md-6">
 
-								<form class="form form-modal form-feedback" action="index.html" method="post">
-
-									<div class="form-group">
-										<input type="text" class="form-control form-noactive" id="subjid" readonly required>
-									</div>
-
-									<div class="form-group">
-										<input placeholder="Имя" type="text" id="formFeedbackName" required>
-										<label for="formFeedbackName">Имя</label>
-									</div>
-
-									<div class="form-group">
-										<input placeholder="Телефон" type="text" id="formFeedbackPhone" required>
-										<label for="formFeedbackPhone">Телефон</label>
-									</div>
-
-									<div class="form-group">
-										<input placeholder="Email" type="email" id="formFeedbackEmail" required>
-										<label for="formFeedbackEmail">Email</label>
-									</div>
-
-									<a type="a" class="btn btn-gold active">Заказать</a>
-								</form>
+								<?php echo do_shortcode('[contact-form-7 id="268" title="Услуги"]'); ?>
 
 							</div>
 						</div>

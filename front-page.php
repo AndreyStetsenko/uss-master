@@ -11,143 +11,51 @@ echo do_shortcode('[smartslider3 slider="2"]');
   </div>
 
   <div class="services-h">
-    <div class="container">
-      <div class="services-tabs tab-content" id="nav-tabContent">
-
-        <div class="row services-tabs-item tab-pane fade show active" id="list-shouse" role="tabpanel" aria-labelledby="list-shouse">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab1.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Умный дом</h2>
-              <span class="services-tabs-item__cont--text">В первую очередь, задача комплекта — охрана членов семьи и имущества от несанкционированного проникновения в дом, бытовых несчастных случаев.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/umnyj-dom/">Подробнее</a>
+    <?php if ( have_rows( 'home-services-top' ) ) : ?>
+      <div class="container">
+        <div class="services-tabs tab-content" id="nav-tabContent">
+        	<?php while ( have_rows( 'home-services-top' ) ) : the_row(); $s_card = $s_card + 1; ?>
+            <div class="row services-tabs-item tab-pane fade" id="list-<?php echo $s_card; ?>" role="tabpanel" aria-labelledby="list-<?php echo $s_card; ?>">
+              <div class="col-12 col-md-6">
+                <div class="services-tabs-item--img img-full-cont">
+            		<?php if ( get_sub_field( 'img' ) ) : ?>
+            			<img src="<?php the_sub_field( 'img' ); ?>" />
+            		<?php endif ?>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="services-tabs-item__cont">
+                  <h2 class="services-tabs-item__cont--title"><?php the_sub_field( 'title' ); ?></h2>
+                  <span class="services-tabs-item__cont--text"><?php the_sub_field( 'description' ); ?></span>
+                  <div class="services-tabs-item__cont--btn">
+                    <?php $link = get_sub_field( 'link' ); ?>
+                		<?php if ( $link ) : ?>
+                			<a class="btn btn-gold" href="<?php echo esc_url( $link); ?>">Подробнее</a>
+                		<?php endif; ?>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+        	<?php endwhile; ?>
         </div>
-
-        <div class="row services-tabs-item tab-pane fade" id="list-csecurity" role="tabpanel" aria-labelledby="list-csecurity">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab2.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Пультовая охрана</h2>
-              <span class="services-tabs-item__cont--text">Преимуществами пакета являются широкий ассортимент датчиков, простота установки, отсутствие проводов.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/pultovaja-ohrana/">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row services-tabs-item tab-pane fade" id="list-psecurity" role="tabpanel" aria-labelledby="list-psecurity">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab3.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Личная охрана</h2>
-              <span class="services-tabs-item__cont--text">По договоренности с клиентом наша фирма предоставит услуги телохранителей, контроля доступа в помещения, контроля сохранности имущества.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/lichnaja-ohrana/">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row services-tabs-item tab-pane fade" id="list-sconcept" role="tabpanel" aria-labelledby="list-sconcept">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab4.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Концепция безопасности</h2>
-              <span class="services-tabs-item__cont--text">Группа компаний USS Security предлагает полный комплекс охранных услуг от проведения консультаций до сервисного обслуживания установленного охранного оборудования.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/fizicheskaja-ohrana/">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row services-tabs-item tab-pane fade" id="list-cctv" role="tabpanel" aria-labelledby="list-cctv">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab5.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Видеонаблюдение</h2>
-              <span class="services-tabs-item__cont--text">Данный вид систем безопасности позволяет не только фиксировать, но и вести запись изображения поступающего с системы видеокамер расположенных на охраняемом объекте.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/videonabljudenie/">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row services-tabs-item tab-pane fade" id="list-acontrol" role="tabpanel" aria-labelledby="list-acontrol">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab6.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Контроль доступа</h2>
-              <span class="services-tabs-item__cont--text">Компания USS Security предлагает услугу оптимального контроля любого интересующего вас объекта. Озвучьте проблему, а способы и средства ее решения мы предложим вам сами.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/kontrol-dostupa/">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row services-tabs-item tab-pane fade" id="list-falarm" role="tabpanel" aria-labelledby="list-falarm">
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item--img img-full-cont">
-              <img src="/wp-content/uploads/2020/08/tab7.png" alt="uss">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="services-tabs-item__cont">
-              <h2 class="services-tabs-item__cont--title">Пожарная сигнализация</h2>
-              <span class="services-tabs-item__cont--text">USS Security оказывает услуги комплексного обеспечения пожарной безопасности объектов с любой степенью риска возгорания.</span>
-              <div class="services-tabs-item__cont--btn">
-                <a class="btn btn-gold" href="/service/ohrannoe-oborudovanie/">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
+    <?php else : ?>
+    	<?php // no rows found ?>
+    <?php endif; ?>
+
+    <?php if ( have_rows( 'home-services-top-title' ) ) : ?>
     <div class="container-fluid">
       <div class="services-links">
         <div class="services-links__list list-group" id="list-tab">
-          <a class="services-links__list-item active" id="list-shouse" data-toggle="list" href="#list-shouse" role="tab" aria-controls="shouse">Умный дом</a>
-          <a class="services-links__list-item" id="list-csecurity" data-toggle="list" href="#list-csecurity" role="tab" aria-controls="csecurity">Пультовая охрана</a>
-          <a class="services-links__list-item" id="list-psecurity" data-toggle="list" href="#list-psecurity" role="tab" aria-controls="psecurity">Личная охрана</a>
-          <a class="services-links__list-item" id="list-sconcept" data-toggle="list" href="#list-sconcept" role="tab" aria-controls="sconcept">Концепция безопасности</a>
-          <a class="services-links__list-item" id="list-cctv" data-toggle="list" href="#list-cctv" role="tab" aria-controls="cctv">Видеонаблюдение</a>
-          <a class="services-links__list-item" id="list-acontrol" data-toggle="list" href="#list-acontrol" role="tab" aria-controls="acontrol">Контроль доступа</a>
-          <a class="services-links__list-item" id="list-falarm" data-toggle="list" href="#list-falarm" role="tab" aria-controls="falarm">Пожарная сигнализация</a>
+        	<?php while ( have_rows( 'home-services-top-title' ) ) : the_row(); $st_card = $st_card + 1; ?>
+            <a class="services-links__list-item" id="list-<?php echo $st_card; ?>" data-toggle="list" href="#list-<?php echo $st_card; ?>" role="tab" aria-controls="list<?php echo $st_card; ?>"><?php the_sub_field( 'title' ); ?></a>
+        	<?php endwhile; ?>
         </div>
       </div>
     </div>
+    <?php else : ?>
+    	<?php // no rows found ?>
+    <?php endif; ?>
   </div>
 
 </section>

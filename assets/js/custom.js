@@ -97,9 +97,9 @@ $(function () {
   }
 });
 $(document).ready(function () {
-  h = $('.post-gallery-main__post').height() + 70;
-  $('.post-gallery-main__img').height(h);
-  console.log(h);
+  i = $('.post-gallery-imgs').height() - 25;
+  $('.post-gallery-gal--img__img').height(i);
+  console.log(i);
 }); // $(function(){
 //   if ( $(window).width() < 990 ) {
 //     $(window).scroll(function() {
@@ -113,3 +113,20 @@ $(document).ready(function () {
 //     });
 //   }
 // });
+
+if ($(window).width() > 768) {
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 96) {
+        $('#nav-top').addClass('nav-min');
+      } else {
+        $('#nav-top').removeClass('nav-min');
+      }
+    });
+  });
+}
+
+$(document).ready(function () {
+  var $tabs = $('.services-tabs-item');
+  $tabs.first().addClass('show active');
+});

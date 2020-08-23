@@ -110,6 +110,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .pagination .page-item.disabled .page-link{color:#c4c4c4}
 .pagination .page-item.active .page-link{background:0;color:#393838;font-weight:bold}
 section{padding-bottom:25px}
+ul{list-style:none;margin:0;padding:0}
 h1,h2,h3,h4,h5,h6{margin:0}
 *{font-family:'Roboto'}
 .img-full-cont{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -130,7 +131,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .owl-next{right:15px}
 .breadcrumbs{padding:50px 0}
 .breadcrumbs .page-title h1{color:#393838;font-size:28px;font-weight:300}
-.breadcrumbs-cont{padding-top:10px;font-size:14px;color:#393838}
+.breadcrumbs-cont{font-size:14px;color:#393838;background:#f0f0f0;padding:15px;margin-top:20px;border-radius:3px}
 .breadcrumbs-cont--link{text-decoration:underline;color:#393838;-webkit-transition:.2s;transition:.2s}
 .breadcrumbs-cont--link:hover{color:#b0976d}
 .breadcrumbs-cont--separator{padding:0 3px}
@@ -209,8 +210,9 @@ button:focus{outline:0}
 .navbar .navbar-nav .dropdown-menu{margin:0;border:0;border-radius:0}
 .navbar .navbar-nav .dropdown-menu a{font-size:14px;color:#6f6f6f;background:transparent;-webkit-transition:.2s;transition:.2s}
 .navbar .navbar-nav .dropdown-menu a:hover{color:#333}
-.navbar-uss{background-color:#fff !important}
-.navbar-uss .navbar-nav{padding-top:14px;padding-bottom:14px}
+.navbar-uss{background-color:#fff !important;top:0}
+.navbar-uss .navbar-nav{padding-top:14px;padding-bottom:14px;-webkit-transition:.2s;transition:.2s}
+.navbar-uss .navbar-nav.nav-min{top:0 !important;-webkit-transition:.2s;transition:.2s;padding-top:0 !important;padding-bottom:0 !important}
 .navbar-uss .navbar-nav li.dropdown>a:after{display:none}
 .navbar-uss .navbar-nav li>a{font-size:16px;padding-left:25px !important;padding-right:25px !important;color:#6f6f6f !important;font-weight:400;-webkit-transition:.2s;transition:.2s}
 .navbar-uss .navbar-nav li>a:focus{outline:0}
@@ -315,6 +317,7 @@ button:focus{outline:0}
 #fbuilder .fields .dfield input[type="text"]{font-size:14px;width:350px;padding:8px 15px;border-radius:5px;border:1px solid #e5e5e5;background:#fff}
 #fbuilder .fields .dfield label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #fbuilder .fields .dfield label input[type="checkbox"]{margin-right:10px;width:20px;border:1px solid #e5e5e5;background:#e5e5e5}
+.gallery-list{margin:0}
 .gallery-list-item{margin-bottom:25px;background:#e5e5e5;border-radius:5px;-webkit-transition:.2s;transition:.2s}
 .gallery-list-item:hover{-webkit-box-shadow:0 0 25px rgba(0,0,0,0.1);box-shadow:0 0 25px rgba(0,0,0,0.1);-webkit-transform:scale(1.01);transform:scale(1.01)}
 .gallery-list-item:last-child{margin-bottom:0}
@@ -339,8 +342,8 @@ button:focus{outline:0}
 .post-gallery-main__post--date{margin-bottom:15px;display:block}
 .services-list-item{max-width:calc(50% - 30px);height:180px;display:block;margin:15px}
 .services-list-item:nth-child(-n+2){margin-top:0}
-.services-list-item:nth-child(odd){margin-left:0}
-.services-list-item:nth-child(2n){margin-right:0}
+.services-list-item:nth-child(odd){margin-left:15px}
+.services-list-item:nth-child(2n){margin-right:15px}
 .services-list-item a{text-decoration:none}
 .services-list-item__cont{padding:5px;position:absolute;left:0;top:0;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;text-align:center;background-repeat:no-repeat !important;background-size:cover !important;border-radius:3px;-webkit-transition:.3s;transition:.3s}
 .services-list-item__cont:hover{opacity:.95}
@@ -393,13 +396,17 @@ button:focus{outline:0}
 .about-partners__list--title{text-align:center;font-size:18px;font-weight:500}
 .about-clients .clients-box-item--img{max-width:70%}
 .about-clients .clients-box-item--img img{-webkit-filter:grayscale(0);filter:grayscale(0)}
+.sidebar{position:-webkit-sticky;position:sticky;top:50px}
 .our-services--title{font-size:18px;color:#393838}
 .our-services--list{padding-top:10px;padding-left:5px;list-style:none}
 .our-services--list li a{font-size:14px;color:#393838;text-decoration:none}
 .our-services--list li a:hover{color:#282828}
-.widget_nav_menu .menu{padding:25px 15px;border:1px solid #b0976d;border-radius:10px}
-.widget_nav_menu .menu li{padding:3px 0}
-.widget_nav_menu .menu li a{color:#393838;text-decoration:none;padding:3px 0}
+.widget:last-child{padding-bottom:0}
+.widget .widget-title{font-size:24px;margin-bottom:10px;color:#393838}
+.widget.widget_nav_menu{padding:25px 20px;background:#f0f0f0;border-radius:3px}
+.widget.widget_nav_menu .menu li{padding:3px 0}
+.widget.widget_nav_menu .menu li a{color:#393838;text-decoration:none;padding:3px 0;-webkit-transition:.2s;transition:.2s}
+.widget.widget_nav_menu .menu li a:hover{padding-left:3px}
 .post-footer{max-width:650px;margin:0 auto}
 .post-meta{margin-top:25px}
 .post-meta-item--left{font-weight:500;font-size:14px;color:#393838}
@@ -453,6 +460,7 @@ footer .footer-copyright span{color:#fff;font-weight:300;font-size:16px}
 .pagination .page-item.disabled .page-link{color:#c4c4c4}
 .pagination .page-item.active .page-link{background:0;color:#393838;font-weight:bold}
 section{padding-bottom:25px}
+ul{list-style:none;margin:0;padding:0}
 h1,h2,h3,h4,h5,h6{margin:0}
 *{font-family:'Roboto'}
 .img-full-cont{width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -473,7 +481,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .owl-next{right:15px}
 .breadcrumbs{padding:50px 0}
 .breadcrumbs .page-title h1{color:#393838;font-size:28px;font-weight:300}
-.breadcrumbs-cont{padding-top:10px;font-size:14px;color:#393838}
+.breadcrumbs-cont{font-size:14px;color:#393838;background:#f0f0f0;padding:15px;margin-top:20px;border-radius:3px}
 .breadcrumbs-cont--link{text-decoration:underline;color:#393838;-webkit-transition:.2s;transition:.2s}
 .breadcrumbs-cont--link:hover{color:#b0976d}
 .breadcrumbs-cont--separator{padding:0 3px}
@@ -601,6 +609,15 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .gallery-list-item__body--link:hover{color:#b0976d}
 .widget ul,footer ul,.about-list ul{padding:0;list-style:none}
 ul{list-style:none}
+.wpcf7 form{width:100% !important}
+.wpcf7 .form-group #subjid{border:0;padding:0;font-size:18px !important;color:#393838 !important;font-weight:300}
+.wpcf7 .form-group input{width:100%;height:46px;padding:13px 20px;border:1px solid #b0976d;border-radius:2px;font-size:14px !important}
+.wpcf7 .form-group input:active,.wpcf7 .form-group input:focus{outline:0;-webkit-box-shadow:none;box-shadow:none}
+.wpcf7 .form-group input::-webkit-input-placeholder{font-size:14px;color:#909090;font-weight:500}
+.wpcf7 .form-group input::-moz-placeholder{font-size:14px;color:#909090;font-weight:500}
+.wpcf7 .form-group input:-ms-input-placeholder{font-size:14px;color:#909090;font-weight:500}
+.wpcf7 .form-group input::-ms-input-placeholder{font-size:14px;color:#909090;font-weight:500}
+.wpcf7 .form-group input::placeholder{font-size:14px;color:#909090;font-weight:500}
 @media(min-width:767.99px){.price-services-item:hover{margin:0 25px 50px 25px}
 }@media(min-width:991.98px){.navbar .mob-show{display:none}
 .navbar .dropdown:hover>.dropdown-menu{display:block}

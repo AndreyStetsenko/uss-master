@@ -253,3 +253,21 @@ function my_navigation_template( $template, $class ){
 	</nav>
 	';
 }
+
+// Удаление Generator
+add_filter('the_generator', '__return_empty_string');
+
+// Удаление параметра ver из добавляемых скриптов и стилей
+function rem_wp_ver_css_js( $src ) {
+
+    if ( strpos( $src, 'ver=' ) )
+
+        $src = remove_query_arg( 'ver', $src );
+
+    return $src;
+
+}
+
+add_filter( 'style_loader_src', 'rem_wp_ver_css_js', 9999 );
+
+add_filter( 'script_loader_src', 'rem_wp_ver_css_js', 9999 );
