@@ -634,6 +634,12 @@ ul{list-style:none}
 .wpcf7 .form-group input:-ms-input-placeholder{font-size:14px;color:#909090;font-weight:500}
 .wpcf7 .form-group input::-ms-input-placeholder{font-size:14px;color:#909090;font-weight:500}
 .wpcf7 .form-group input::placeholder{font-size:14px;color:#909090;font-weight:500}
+.pagination-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:25px}
+.pagination-list .page-numbers{background:#f0f0f0;width:30px;height:30px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 2px;border-radius:2px;color:#393838;font-weight:300;text-decoration:none;-webkit-transition:.2s;transition:.2s}
+.pagination-list .page-numbers.current{font-weight:500;background:#d3d3d3}
+.pagination-list .page-numbers:hover{background:#d3d3d3}
+.pagination-list .page-numbers.dots{background:#fff}
+.pagination-list .page-numbers.next,.pagination-list .page-numbers.prev{color:#737373}
 @media(min-width:767.99px){.price-services-item:hover{margin:0 25px 50px 25px}
 }@media(min-width:991.98px){.navbar .mob-show{display:none}
 .navbar .dropdown:hover>.dropdown-menu{display:block}

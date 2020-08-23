@@ -93,3 +93,46 @@ ul {
     }
   }
 }
+
+
+// Pagination
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+
+  a {}
+
+  .page-numbers {
+    background: $l-gray2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    border-radius: 2px;
+    color: $uss;
+    font-weight: 300;
+    text-decoration: none;
+    transition: .2s;
+
+    &.current {
+      font-weight: 500;
+      background: $l-gray3;
+    }
+
+    &:hover {
+      background: $l-gray3;
+    }
+
+    &.dots {
+      background: #fff;
+    }
+
+    &.next, &.prev {
+      color: $d-gray;
+    }
+  }
+}
