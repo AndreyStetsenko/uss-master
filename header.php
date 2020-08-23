@@ -82,11 +82,31 @@
 
             <div class="dropdown topbar-dropdown topbar-lang">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                RU
+								<?php
+								    $current_language = get_locale();
+
+								    if( $current_language == 'en_US' ){
+								      echo 'EN';
+								    }
+
+										if( $current_language == 'ru_RU' ){
+								      echo 'RU';
+								    }
+
+										if( $current_language == 'uk' ){
+								      echo 'UA';
+								    }
+
+								?>
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a href="#">EN</a>
-                <a href="#">UA</a>
+								<?php
+								 wp_nav_menu([
+									 'menu'            => 'Language',
+									 'theme_location'  => 'lang',
+									 'depth'           => 1,
+								 ]);
+								 ?>
               </div>
             </div>
           </div>
