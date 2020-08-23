@@ -414,11 +414,11 @@ button:focus{outline:0}
 .our-services--list li a{font-size:14px;color:#393838;text-decoration:none}
 .our-services--list li a:hover{color:#282828}
 .widget:last-child{padding-bottom:0}
-.widget_nav_menu .menu-main-container{padding:25px 20px;background:#f0f0f0;border-radius:3px}
-.widget_nav_menu .menu-main-container .widget-title{font-size:24px;margin-bottom:10px;color:#393838}
-.widget_nav_menu .menu-main-container .menu li{padding:3px 0}
-.widget_nav_menu .menu-main-container .menu li a{color:#393838;text-decoration:none;padding:3px 0;-webkit-transition:.2s;transition:.2s}
-.widget_nav_menu .menu-main-container .menu li a:hover{padding-left:3px}
+.widget .widget-title{font-size:24px;margin-bottom:10px;color:#393838}
+.widget.widget_nav_menu{padding:25px 20px;background:#f0f0f0;border-radius:3px}
+.widget.widget_nav_menu .menu li{padding:3px 0}
+.widget.widget_nav_menu .menu li a{color:#393838;text-decoration:none;padding:3px 0;-webkit-transition:.2s;transition:.2s}
+.widget.widget_nav_menu .menu li a:hover{padding-left:3px}
 .post-footer{max-width:650px;margin:0 auto}
 .post-meta{margin-top:25px}
 .post-meta-item--left{font-weight:500;font-size:14px;color:#393838}
