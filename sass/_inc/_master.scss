@@ -47,6 +47,16 @@ ul {
 // Contact Form
 
 .wpcf7 {
+  .wpcf7-response-output {
+    background-color: #46b450;
+    margin: 0;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 300;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
   form {
     width: 100%!important;
   }
