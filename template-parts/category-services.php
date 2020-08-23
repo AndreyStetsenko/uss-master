@@ -13,10 +13,7 @@
     <div class="row">
       <div class="col-12">
         <div class="page-title">
-          <?php
-          the_archive_title( '<h1 class="page-title">', '</h1>' );
-          the_archive_description( '<div class="archive-description">', '</div>' );
-          ?>
+          <h1 class="page-title"><?php single_cat_title(); ?></h1>
         </div>
         <div class="breadcrumbs-cont">
           <?php the_breadcrumb(); ?>
