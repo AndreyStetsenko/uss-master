@@ -219,7 +219,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
         <a href="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg" class="img-fluid rounded">
         </a>
-        <a href="#" class="gallery-box-item next">
+        <a href="/gallery" class="gallery-box-item next">
           <img src="http://uss.ua/wp-content/uploads/2016/12/19884_308287_1481270874.jpg">
           <span>Смотреть галерею <i class="icon fas fa-arrow-circle-right"></i></span>
           <div class="flow"></div>
