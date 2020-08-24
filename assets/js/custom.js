@@ -129,4 +129,12 @@ if ($(window).width() > 768) {
 $(document).ready(function () {
   var $tabs = $('.services-tabs-item');
   $tabs.first().addClass('show active');
+  $(function () {
+    $('.owl-item').matchHeight({
+      byRow: true,
+      property: 'height',
+      target: null,
+      remove: false
+    });
+  });
 });

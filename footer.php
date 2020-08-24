@@ -20,9 +20,9 @@
 							<span class="footer-title--text">Контакты</span>
 						</div>
 						<ul class="footer-list">
-							<li><a href="tel:+380445007788"><i class="icon fas fa-phone-alt"></i>+380 (44)  500 77 88</a></li>
+							<li><a href="tel:+380445007788"><i class="icon fas fa-phone-alt"></i>+380 (44)  5007788</a></li>
 							<li><a href="mailto:uss@uss.ua"><i class="icon fas fa-envelope"></i>uss@uss.ua</a></li>
-							<li><a href="/contacts/"><i class="icon fas fa-map-marker-alt"></i>USS Security, М. Гринченка, 4а, 03680, Киев, Украина</a></li>
+							<li><a href="/contacts/"><i class="icon fas fa-map-marker-alt"></i>USS Security, М. Гринченко, 4а, 03680, Киев, Украина</a></li>
 						</ul>
 					</div>
 				</div>
@@ -87,7 +87,7 @@
 						<div class="row">
 							<div class="col-md-12">
 
-								<?php echo do_shortcode('[contact-form-7 id="270" title="Контакты"]'); ?>
+								<?php echo do_shortcode('[contact-form-7 id="6118" title="Контакты"]'); ?>
 
 							</div>
 						</div>
@@ -118,7 +118,7 @@
 							</div>
 							<div class="col-md-6">
 
-								<?php echo do_shortcode('[contact-form-7 id="268" title="Услуги"]'); ?>
+								<?php echo do_shortcode('[contact-form-7 id="6119" title="Услуги"]'); ?>
 
 							</div>
 						</div>

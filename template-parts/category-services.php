@@ -36,7 +36,7 @@
 
             // записываем $post во временную переменную $tmp_post
             $tmp_post = $post;
-            $args = array( 'posts_per_page' => 10, 'category' => 15 );
+            $args = array( 'posts_per_page' => 10, 'category' => 105 );
             $myposts = get_posts( $args );
             $src = get_the_post_thumbnail_url(null, 'full');
 

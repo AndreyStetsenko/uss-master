@@ -115,7 +115,7 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-uss">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-uss" id="nav-top">
     <div class="container">
       <a class="navbar-brand"><img src="<?php echo $custom_logo__url[0]; ?>" alt="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
       <button class="navbar-toggler" type="button">

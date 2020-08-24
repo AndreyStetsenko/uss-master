@@ -47,7 +47,7 @@
           <h4 class="title-4 mb-4 mt-4">Заинтересованы? Заполните форму ниже, и наши специалисты свяжутся с Вами!</h4>
 
           <div class="vacancies-form">
-            <?php echo do_shortcode('[wpforms id="248"]'); ?>
+            <?php echo do_shortcode('[wpforms id="6117"]'); ?>
             <!-- <form class="form form-modal vacancies-form--form">
               <div class="inputs">
                 <div class="form-group select">
