@@ -22,7 +22,7 @@
 						<ul class="footer-list">
 							<li><a href="tel:+380445007788"><i class="icon fas fa-phone-alt"></i>+380445007788</a></li>
 							<li><a href="mailto:uss@uss.ua"><i class="icon fas fa-envelope"></i>uss@uss.ua</a></li>
-							<li><a href="/contacts/"><i class="icon fas fa-map-marker-alt"></i>USS Security, М. Гринченко, 4а, 03680, Киев, Украина</a></li>
+							<li><a href="/contacts/"><i class="icon fas fa-map-marker-alt"></i>USS Security, ул. Н. Гринченко 4а, 03680, Киев, Украина</a></li>
 						</ul>
 					</div>
 				</div>
