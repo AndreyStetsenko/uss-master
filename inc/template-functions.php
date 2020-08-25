@@ -40,6 +40,7 @@ add_action( 'wp_head', 'uss_security_pingback_header' );
 require_once('bs4navwalker.php');
 // Register WordPress nav menu
 register_nav_menu('top', 'Top menu');
+register_nav_menu('footer', 'Footer menu');
 register_nav_menu('lang', 'Language');
 
 // Добавляем файл стилей в тег <head>
