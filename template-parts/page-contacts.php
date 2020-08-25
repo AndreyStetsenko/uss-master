@@ -31,8 +31,8 @@
         <div class="contacts contacts-info">
           <div class="contacts-info-contacts">
             <h2 class="title-3">г. Киев</h2>
-            <a href="tel:+380445007788" class="contacts-info--item"><i class="icon fas fa-phone-alt"></i>+38 (044) 5007788</a>
-            <a href="tel:+380674063545" class="contacts-info--item"><i class="icon fas fa-phone-alt"></i>+38 (067) 4063545</a>
+            <a href="tel:+380445007788" class="contacts-info--item"><i class="icon fas fa-phone-alt"></i>+380445007788</a>
+            <a href="tel:+380674063545" class="contacts-info--item"><i class="icon fas fa-phone-alt"></i>+380674063545</a>
             <a href="mailto:uss@uss.ua" class="contacts-info--item"><i class="icon fas fa-at"></i>uss@uss.ua</a>
             <a href="" class="contacts-info--item"><i class="icon fas fa-map-marker-alt"></i>USS Security, ул. Н. Гринченко 4а, 03680, Киев, Украина</a>
             <a href="#" class="btn btn-gold" data-toggle="modal" data-target="#modalContactsMap">Показать на карте</a>
