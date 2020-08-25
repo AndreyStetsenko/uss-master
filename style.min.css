@@ -666,6 +666,7 @@ ul{list-style:none}
 .services-list-item:last-child{margin-bottom:0 !important}
 }@media(max-width:767.98px){.topbar .mob-hide{display:none}
 .navbar .navbar-brand{color:#fff;font-weight:500}
+.navbar .navbar-brand:hover{color:#fff}
 .navbar .navbar-brand img{width:50px}
 .sidebar{margin-top:20px}
 .services-h{padding-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
