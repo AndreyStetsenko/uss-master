@@ -403,10 +403,12 @@ button:focus{outline:0}
 .about-founders .about-text{font-weight:300}
 .about-founders .about-list li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .about-founders .about-list li .icon{font-size:8px}
-.about-partners__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.about-partners__list--item{max-width:30%;border:1px solid #b0976d;border-radius:5px;padding:15px;text-align:center}
+.about-partners__list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.about-partners__list--item{margin-left:25px;margin-right:25px;width:100%;border:1px solid #b0976d;border-radius:5px;padding:15px;text-align:center}
+.about-partners__list--item:first-child{margin-left:0}
+.about-partners__list--item:last-child{margin-right:0}
 .about-partners__list--img{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:80%;height:175px;margin:0 auto 15px}
-.about-partners__list--img img{width:100%}
+.about-partners__list--img img{width:100%;height:100%;-o-object-fit:contain;object-fit:contain}
 .about-partners__list--title{text-align:center;font-size:18px;font-weight:500}
 .about-clients .clients-box-item--img{max-width:70%}
 .about-clients .clients-box-item--img img{-webkit-filter:grayscale(0);filter:grayscale(0)}
@@ -702,5 +704,10 @@ ul{list-style:none}
 .gallery-list-item__body{padding:35px 25px}
 .gallery-list-item__img{max-height:180px}
 .gallery-list-item__img img{width:100%;max-height:180px;height:100%;border-radius:5px 5px 0 0;-o-object-fit:cover;object-fit:cover}
+.about-partners__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.about-partners__list--item{margin:0;margin-bottom:25px}
+.about-partners__list--item:last-child{margin:0}
+.about-questions-accordion .card-header button{padding:15px 40px 15px 15px}
+.about-questions-accordion .card-body{padding:5px 15px 10px 16px}
 }@media(max-width:575.98px){.navbar>.container{padding-left:15px;padding-right:0}
 }

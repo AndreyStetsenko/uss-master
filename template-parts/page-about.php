@@ -26,7 +26,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-12">
         <div class="main-content">
 
           <div class="about-company">
@@ -255,9 +255,6 @@
           <?php endif; ?>
 
         </div>
-      </div>
-      <div class="col-12 col-md-3">
-        <?php get_sidebar(); ?>
       </div>
     </div>
   </div>

@@ -369,6 +369,29 @@
     }
   }
 
+  .about-partners__list {
+    flex-direction: column;
+
+    &--item {
+      margin: 0;
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .about-questions-accordion  {
+    .card-header button {
+      padding: 15px 40px 15px 15px;
+    }
+
+    .card-body {
+      padding: 5px 15px 10px 16px;
+    }
+  }
+
 }
 
 // Экстрамалые девайсы («портретные телефоны», < 576px)

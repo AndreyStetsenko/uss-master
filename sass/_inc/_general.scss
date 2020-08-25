@@ -1456,14 +1456,24 @@ button:focus {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
 
       &--item {
-        max-width: 30%;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 100%;
         border: 1px solid $gold;
         border-radius: 5px;
         padding: 15px;
         text-align: center;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        &:last-child {
+          margin-right: 0px;
+        }
       }
 
       &--img {
@@ -1475,6 +1485,8 @@ button:focus {
 
         img {
           width: 100%;
+          height: 100%;
+          object-fit: contain;
         }
       }
 
