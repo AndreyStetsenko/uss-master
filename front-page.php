@@ -189,7 +189,36 @@ echo do_shortcode('[smartslider3 slider="2"]');
 	<?php endwhile; ?>
 <?php endif; ?>
 
+
+
+<?php if ( have_rows( 'gallery-home' ) ) : ?>
 <section class="home-gallery">
+	<?php while ( have_rows( 'gallery-home' ) ) : the_row(); ?>
+  <div class="title-main">
+    <h2 class="title-main--title"><?php the_sub_field( 'title' ); ?></h2>
+  </div>
+		<?php if ( have_rows( 'gallery-box' ) ) : ?>
+    <div class="container">
+      <div class="row">
+        <div class="gallery-box">
+    		<?php while ( have_rows( 'gallery-box' ) ) : the_row(); ?>
+    			<?php if ( get_sub_field( 'img' ) ) : ?>
+            <a href="<?php the_sub_field( 'img' ); ?>" data-toggle="lightbox" data-gallery="gallery" class="gallery-box-item">
+              <img src="<?php the_sub_field( 'img' ); ?>" class="img-fluid rounded">
+            </a>
+    			<?php endif ?>
+    		<?php endwhile; ?>
+        </div>
+      </div>
+    </div>
+		<?php else : ?>
+			<?php // no rows found ?>
+		<?php endif; ?>
+	<?php endwhile; ?>
+</section>
+<?php endif; ?>
+
+<!-- <section class="home-gallery">
 
   <div class="title-main">
     <h2 class="title-main--title">Галерея</h2>
@@ -228,11 +257,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
     </div>
   </div>
 
-  <!-- <div class="home-gallery--footer">
-    <a class="btn btn-gold" href="#">Смотреть галерею</a>
-  </div> -->
-
-</section>
+</section> -->
 
 <?php if ( have_rows( 'home-clients' ) ) : ?>
 <section class="home-clients">
