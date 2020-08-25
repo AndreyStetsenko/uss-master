@@ -1271,7 +1271,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0; }
 
 .breadcrumbs-cont a:hover { color: #B0976D; text-decoration: underline; }
 
-.post-gallery-gal--img { min-height: 100px; height: calc(100% - 50px); }
+.post-gallery-gal--img { min-height: 150px; height: calc(100% - 50px); }
 
 .gallery-list-item__body--link { font-size: 14px; color: #393838; -webkit-transition: .1s; transition: .1s; }
 
