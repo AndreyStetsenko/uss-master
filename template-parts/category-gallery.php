@@ -26,49 +26,47 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-1"></div>
+      <div class="col-12 col-md-10">
         <div class="gallery-list row">
 
-          <?php if ( have_posts() ) : ?>
+          <?php /*
+           * Template name: Блог
+           */
+          $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1; // определяем текущую страницу блога
+          $args = array(
+          	'posts_per_page' => get_option('posts_per_page'), // значение по умолчанию берётся из настроек, но вы можете использовать и собственное
+            'category__and' => 104,
+          	'paged'          => $current_page // текущая страница
+          );
+          query_posts( $args );
 
-            <?php
-            global $post;
+          $wp_query->is_archive = true;
+          $wp_query->is_home = false;
 
-            // записываем $post во временную переменную $tmp_post
-            $tmp_post = $post;
-            $args = array( 'posts_per_page' => 5, 'category' => 104 );
-            $myposts = get_posts( $args );
-            $src = get_the_post_thumbnail_url(null, 'full');
-
-            foreach( $myposts as $post ){ setup_postdata($post);
-            	?>
-              <div class="gallery-list-item">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <div class="gallery-list-item__body">
-                      <h2 class="gallery-list-item__body--title"><?php the_title(); ?></h2>
-                      <p class="gallery-list-item__body--text"><?php do_excerpt(get_the_excerpt(), 50); ?></p>
-                      <div class="gallery-list-item__body--footer">
-                        <span class="gallery-list-item__body--date"><?php the_date('d F Y'); ?></span>
-                        <a class="gallery-list-item__body--link" href="<?php the_permalink(); ?>">Перейти к событию ></a>
-                      </div>
-                    </div>
+          while(have_posts()): the_post();
+          	?>
+            <div class="gallery-list-item">
+              <div class="row">
+                <div class="col-12 col-md-4">
+                  <div class="gallery-list-item__img">
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                   </div>
-                  <div class="col-12 col-md-4">
-                    <div class="gallery-list-item__img">
-                      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                </div>
+                <div class="col-12 col-md-8">
+                  <div class="gallery-list-item__body">
+                    <h2 class="gallery-list-item__body--title"><?php the_title(); ?></h2>
+                    <p class="gallery-list-item__body--text"><?php do_excerpt(get_the_excerpt(), 50); ?></p>
+                    <div class="gallery-list-item__body--footer">
+                      <span class="gallery-list-item__body--date"><?php the_date('d F Y'); ?></span>
+                      <a class="gallery-list-item__body--link" href="<?php the_permalink(); ?>">Перейти к событию ></a>
                     </div>
                   </div>
                 </div>
               </div>
-            	<?php
-            }
-
-            // возвращаем былое значение $post
-            $post = $tmp_post;
-            ?>
-
-      		<?php endif;?>
+            </div>
+          	<?php
+          endwhile;?>
 
         </div>
         <div class="pagination-list">
@@ -89,9 +87,7 @@
           ?>
         </div>
       </div>
-      <div class="col-12 col-md-3">
-        <?php get_sidebar(); ?>
-      </div>
+      <div class="col-12 col-md-1"></div>
     </div>
   </div>
 </section>
