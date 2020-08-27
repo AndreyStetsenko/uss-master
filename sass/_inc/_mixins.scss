@@ -277,6 +277,10 @@
         text-align: center;
         width: 100%;
 
+        &--text {
+          // text-align: left;
+        }
+
         &--btn {
           margin-bottom: 50px;
         }
@@ -466,8 +470,14 @@
   }
 
   .about-cont {
+    text-align: left;
+
     .about-title {
-      text-align: center;
+      // text-align: center;
+    }
+
+    .btn {
+      width: 100%;
     }
   }
 
