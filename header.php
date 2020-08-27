@@ -117,11 +117,13 @@
 
 	<div class="navbar-uss-top">
 		<div class="navbar-uss-top__lang">
-			<ul>
-				<li><a href="#">EN</a></li>
-				<li><a href="#">RU</a></li>
-				<li><a href="#">UA</a></li>
-			</ul>
+			<?php
+			 wp_nav_menu([
+				 'menu'            => 'Language',
+				 'theme_location'  => 'lang',
+				 'depth'           => 1,
+			 ]);
+			 ?>
 		</div>
 		<div class="navbar-uss-top__phone">
 			<a href="tel:+380445007788">
