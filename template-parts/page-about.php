@@ -163,15 +163,15 @@
 
             <div class="row">
               <div class="col-md-6">
-                <div class="img-full-cont img-aboutus">
-                  <img src="/wp-content/uploads/2020/08/logo-usinvest.png" alt="uss">
-                </div>
-              </div>
-              <div class="col-md-6">
                 <div class="about-cont">
                   <p class="about-text"><b class="c-gold">USS Security</b> входит в структуру международного инвестиционного холдинга  <b>US Invest</b>, предприятия которого ведут успешную деятельность в странах Прибалтики, России и Украине.</p>
                   <p class="about-text">Для создания в Украине охранной компании европейского образца, US Invest привлек команду профессионалов с более чем <b>20-летним</b> опытом работы в сфере обеспечения охраны и безопасности.</p>
                   <p class="about-text">Таким образом, в своей деятельности USS Security использует опыт, методики и технологии ведущих европейских охранных фирм, таких как <b>G4S, Falck, ESS</b>.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-full-cont img-aboutus">
+                  <img src="/wp-content/uploads/2020/08/logo-usinvest.png" alt="uss">
                 </div>
               </div>
             </div>
