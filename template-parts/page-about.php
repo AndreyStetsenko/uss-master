@@ -26,7 +26,8 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-12">
+      <div class="col-1"></div>
+      <div class="col-12 col-md-10">
         <div class="main-content">
 
           <div class="about-company">
@@ -256,6 +257,7 @@
 
         </div>
       </div>
+      <div class="col-1"></div>
     </div>
   </div>
 </section>
