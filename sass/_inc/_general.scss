@@ -245,8 +245,8 @@ button:focus {
 
 .navbar-uss {
   background-color: #fff !important;
-  position: sticky;
-  top: 0;
+  // position: sticky;
+  // top: 0;
 
   .navbar-nav {
     padding-top: 14px;
@@ -449,14 +449,14 @@ button:focus {
       flex-wrap: wrap;
 
       &--title {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 28px;
         color: $uss;
         margin-bottom: 10px;
       }
 
       &--text {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 21px;
         color: $uss;
         margin-bottom: 20px;
@@ -562,7 +562,7 @@ button:focus {
 
     &--title {
       font-weight: bold;
-      font-size: 24px;
+      font-size: 18px;
       text-align: center;
       color: $uss;
       margin-bottom: 20px;
@@ -606,7 +606,7 @@ button:focus {
         margin-top: 5px;
 
         li {
-          font-size: 16px;
+          font-size: 14px;
           line-height: 21px;
           margin-bottom: 8px;
 
@@ -851,8 +851,9 @@ button:focus {
     }
 
     &--title {
-      margin-top: 5px;
+      margin-top: 10px;
       text-align: center;
+      font-size: 14px;
     }
   }
 }
@@ -867,6 +868,11 @@ button:focus {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    h3 {
+      font-weight: 300;
+      font-size: 24px;
+    }
 
     form {
       width: 80%;
@@ -902,7 +908,7 @@ button:focus {
       .contacts-info--item {
         padding-bottom: 15px;
         color: $uss;
-        font-size: 18px;
+        font-size: 14px;
 
         .icon {
           margin-right: 10px;
@@ -1220,9 +1226,9 @@ button:focus {
 
     &--title {
       font-weight: 300;
-      font-size: 24px;
+      font-size: 18px;
       color: $uss;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     &--info {
@@ -1578,6 +1584,7 @@ button:focus {
         a {
           color: $uss;
           text-decoration: none;
+          font-size: 14px;
           padding: 3px 0;
           transition: .2s;
 

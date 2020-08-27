@@ -219,7 +219,7 @@ button:focus{outline:0}
 .navbar .navbar-nav .dropdown-menu{margin:0;border:0;border-radius:0}
 .navbar .navbar-nav .dropdown-menu a{font-size:14px;color:#6f6f6f;background:transparent;-webkit-transition:.2s;transition:.2s}
 .navbar .navbar-nav .dropdown-menu a:hover{color:#333}
-.navbar-uss{background-color:#fff !important;position:-webkit-sticky;position:sticky;top:0}
+.navbar-uss{background-color:#fff !important}
 .navbar-uss .navbar-nav{padding-top:14px;padding-bottom:14px;-webkit-transition:.2s;transition:.2s}
 .navbar-uss .navbar-nav.nav-min{top:0 !important;position:-webkit-sticky !important;position:sticky !important;-webkit-transition:.2s;transition:.2s;padding-top:0 !important;padding-bottom:0 !important}
 .navbar-uss .navbar-nav li.dropdown>a:after{display:none}
@@ -251,8 +251,8 @@ button:focus{outline:0}
 .services-tabs-item--img img{height:250px;-o-object-fit:contain;object-fit:contain}
 .services-tabs-item--img--btn{display:none}
 .services-tabs-item__cont{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.services-tabs-item__cont--title{font-size:24px;line-height:28px;color:#393838;margin-bottom:10px}
-.services-tabs-item__cont--text{font-size:18px;line-height:21px;color:#393838;margin-bottom:20px}
+.services-tabs-item__cont--title{font-size:18px;line-height:28px;color:#393838;margin-bottom:10px}
+.services-tabs-item__cont--text{font-size:14px;line-height:21px;color:#393838;margin-bottom:20px}
 .img-aboutus img{max-width:290px}
 .about-title{font-size:24px;font-weight:bold;color:#393838;margin-bottom:15px}
 .about-text{font-size:18px}
@@ -267,7 +267,7 @@ button:focus{outline:0}
 .price-services-item.sale .btn-gold{background:#b0976d;color:#fff}
 .price-services-item .price-services-sale{position:absolute;width:28px;height:37px;display:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:#b0976d;border-radius:0 0 3px 3px;top:0;right:15px}
 .price-services-item .price-services-sale .icon{font-size:16px;color:#fff}
-.price-services-item--title{font-weight:bold;font-size:24px;text-align:center;color:#393838;margin-bottom:20px}
+.price-services-item--title{font-weight:bold;font-size:18px;text-align:center;color:#393838;margin-bottom:20px}
 .price-services-item--image{margin-bottom:15px;width:100%;height:23%}
 .price-services-item--image img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:5px}
 .price-services-item__body{padding-bottom:10px;border-bottom:1px solid #e5e5e5}
@@ -275,7 +275,7 @@ button:focus{outline:0}
 .price-services-item__body .price-services-content:last-child{margin-bottom:0}
 .price-services-item__body--title{font-size:14px;color:#737373;font-weight:bold}
 .price-services-item__body--list{list-style:none;padding:0;margin:0;margin-top:5px}
-.price-services-item__body--list li{font-size:16px;line-height:21px;margin-bottom:8px}
+.price-services-item__body--list li{font-size:14px;line-height:21px;margin-bottom:8px}
 .price-services-item__body--list li .icon{margin-right:10px;color:#393838}
 .price-services-item__footer{padding:5px 0 0}
 .price-services-item__price{color:#393838;text-align:center;margin-bottom:5px}
@@ -311,16 +311,17 @@ button:focus{outline:0}
 .clients-box-item--img{max-width:60%;margin:0 auto;max-height:180px;overflow:hidden}
 .clients-box-item--img img{width:100%;height:100%;border-radius:5px;-o-object-fit:cover;object-fit:cover;-webkit-transition:.4s;transition:.4s;-webkit-filter:grayscale(100%);filter:grayscale(100%)}
 .clients-box-item--img img:hover{-webkit-filter:grayscale(0);filter:grayscale(0)}
-.clients-box-item--title{margin-top:5px;text-align:center}
+.clients-box-item--title{margin-top:10px;text-align:center;font-size:14px}
 .contacts{padding:25px 0}
 .contacts.contacts-form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.contacts.contacts-form h3{font-weight:300;font-size:24px}
 .contacts.contacts-form form{width:80%;margin-top:25px}
 .contacts.contacts-info{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .contacts.contacts-info .contacts-info-contacts{margin-bottom:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .contacts.contacts-info .contacts-info-contacts:last-child{margin-bottom:0}
 .contacts.contacts-info .contacts-info-contacts .title-3{margin-bottom:25px}
 .contacts.contacts-info .contacts-info-contacts .btn{width:80%;margin-top:25px}
-.contacts.contacts-info .contacts-info-contacts .contacts-info--item{padding-bottom:15px;color:#393838;font-size:18px}
+.contacts.contacts-info .contacts-info-contacts .contacts-info--item{padding-bottom:15px;color:#393838;font-size:14px}
 .contacts.contacts-info .contacts-info-contacts .contacts-info--item .icon{margin-right:10px;color:#b0976d;font-size:18px}
 #fbuilder{width:100%;background:rgba(57,56,56,0.05);padding:0 50px 50px}
 #fbuilder .fields{margin-bottom:15px}
@@ -364,7 +365,7 @@ button:focus{outline:0}
 .services-list-item__cont--desc{margin-top:5px;color:#fff;font-weight:300;font-size:14px;line-height:20px}
 .vacancies-card{padding:25px 30px;background:#f0f0f0;border-radius:10px;margin-bottom:25px}
 .vacancies-card:last-child{margin-bottom:0}
-.vacancies-card--title{font-weight:300;font-size:24px;color:#393838;margin-bottom:20px}
+.vacancies-card--title{font-weight:300;font-size:18px;color:#393838;margin-bottom:15px}
 .vacancies-card--info p{font-size:14px;margin-bottom:10px}
 .vacancies-card--info p:last-child{margin-bottom:0}
 .vacancies-form{padding:25px;background:#fff;border:1px solid #b0976d;border-radius:5px}
@@ -420,7 +421,7 @@ button:focus{outline:0}
 .widget .widget-title{font-size:24px;margin-bottom:10px;color:#393838}
 .widget.widget_nav_menu{padding:25px 20px;background:#f0f0f0;border-radius:3px}
 .widget.widget_nav_menu .menu li{padding:3px 0}
-.widget.widget_nav_menu .menu li a{color:#393838;text-decoration:none;padding:3px 0;-webkit-transition:.2s;transition:.2s}
+.widget.widget_nav_menu .menu li a{color:#393838;text-decoration:none;font-size:14px;padding:3px 0;-webkit-transition:.2s;transition:.2s}
 .widget.widget_nav_menu .menu li a:hover{padding-left:3px}
 .post-footer{max-width:650px;margin:0 auto}
 .post-meta{margin-top:25px}
