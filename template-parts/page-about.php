@@ -26,8 +26,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-12 col-md-10">
+      <div class="col-12 col-md-12">
         <div class="main-content">
 
           <div class="about-company">
@@ -45,7 +44,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-5">
                 <div class="img-full-cont img-aboutus">
                   <img src="/wp-content/uploads/2020/08/big-logo.svg" alt="uss">
                 </div>
@@ -257,7 +256,6 @@
 
         </div>
       </div>
-      <div class="col-1"></div>
     </div>
   </div>
 </section>
