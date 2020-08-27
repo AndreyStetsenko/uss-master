@@ -143,24 +143,24 @@ add_action( 'widgets_init', 'uss_security_widgets_init' );
  * Enqueue scripts and styles.
  */
 function uss_security_scripts() {
-	wp_enqueue_style( 'uss-security-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' );
-	wp_enqueue_style( 'uss-security-bootstrap-select', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css' );
-	wp_enqueue_style( 'uss-security-swiper-bundle', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
-	wp_enqueue_style( 'uss-security-ekko-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' );
-	wp_enqueue_style( 'uss-security-OwlCarousel2', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' );
+	wp_enqueue_style( 'uss-security-bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' );
+	wp_enqueue_style( 'uss-security-bootstrap-select', '//cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css' );
+	wp_enqueue_style( 'uss-security-swiper-bundle', '//unpkg.com/swiper/swiper-bundle.min.css' );
+	wp_enqueue_style( 'uss-security-ekko-lightbox', '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' );
+	wp_enqueue_style( 'uss-security-OwlCarousel2', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' );
 	wp_enqueue_style( 'uss-security-fontawesome', get_template_directory_uri() . '/assets/fonts/fontawesome/css/all.min.css' );
 	wp_enqueue_style( 'uss-security-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'uss-security-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'uss-security-jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-jqueryui', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-jquery-transit', 'https://ricostacruz.com/jquery.transit/jquery.transit.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-bootstrap-select', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-swiper-bundle', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-ekko-lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'uss-security-owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-jquery', '//code.jquery.com/jquery-3.5.1.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-popper', '//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-jqueryui', '//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-jquery-transit', '//ricostacruz.com/jquery.transit/jquery.transit.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-bootstrap-select', '//cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-swiper-bundle', '//unpkg.com/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-ekko-lightbox', '//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'uss-security-owl-carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'uss-security-custom', get_template_directory_uri() . '/assets/js/custom.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'uss-security-vendor', get_template_directory_uri() . '/assets/js/vendor.js', array(), _S_VERSION, true );
 
