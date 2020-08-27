@@ -30,7 +30,7 @@
         <div class="col-7 col-md-6 topbar-col topbar-left-col">
           <div class="topbar-cont">
 
-						<a class="navbar-brand" rel="home">
+						<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<div class="navbar-brand-text">
 								<h1 class="navbar-brand-text--title"><?php bloginfo( 'name' ); ?></h1>
 								<span class="navbar-brand-text--description"><?php echo get_bloginfo('description'); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
@@ -115,9 +115,28 @@
     </div>
   </div>
 
+	<div class="navbar-uss-top">
+		<div class="navbar-uss-top__lang">
+			<ul>
+				<li><a href="#">EN</a></li>
+				<li><a href="#">RU</a></li>
+				<li><a href="#">UA</a></li>
+			</ul>
+		</div>
+		<div class="navbar-uss-top__phone">
+			<a href="tel:+380445007788">
+				<span class="navbar-uss-top__phone--text">24/7</span>
+				<i class="icon fas fa-phone"></i>
+			</a>
+		</div>
+	</div>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-uss" id="nav-top">
     <div class="container">
-      <a class="navbar-brand"><img src="<?php echo $custom_logo__url[0]; ?>" alt="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
+      <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<span class="navbar-brand--logo"><?php bloginfo( 'name' ); ?></span>
+				<img src="<?php echo $custom_logo__url[0]; ?>" alt="<?php bloginfo( 'name' ); ?>">
+			</a>
       <button class="navbar-toggler" type="button">
         <div class="navbar-toggler-burger">
           <div class="burger-line burger-line--1"></div>

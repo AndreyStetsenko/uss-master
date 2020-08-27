@@ -719,7 +719,7 @@ button:focus {
 
   &-item {
     width: calc(25% - 15px);
-    height: 320px;
+    height: 250px;
     margin-bottom: 25px;
     margin-right: 20px;
     position: relative;
@@ -988,17 +988,21 @@ button:focus {
 
   &-item {
     margin-bottom: 25px;
-    background: $light-gray;
-    border-radius: 5px;
+    padding-bottom: 25px;
+    background: #fff;
+    // border-radius: 5px;
+    border-bottom: 1px solid $light-gray;
     transition: .2s;
 
-    &:hover {
-      box-shadow: 0 0 25px rgba(black, .1);
-      transform: scale(1.01);
-    }
+    // &:hover {
+    //   box-shadow: 0 0 25px rgba(black, .1);
+    //   transform: scale(1.01);
+    // }
 
     &:last-child {
       margin-bottom: 0;
+      padding-bottom: 0;
+      border: none;
     }
 
     // &:nth-child(2n) {
@@ -1031,13 +1035,14 @@ button:focus {
       img {
         width: 100%;
         height: 100%;
-        border-radius: 0 5px 5px 0;
+        border-radius: 5px;
         object-fit: cover;
+        border: 1px solid $light-gray;
       }
     }
 
     &__body {
-      padding: 35px 0px 35px 25px;
+      padding: 35px 0px 35px 0;
 
       &--title {
         font-size: 18px;

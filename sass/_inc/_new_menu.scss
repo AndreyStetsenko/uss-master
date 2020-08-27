@@ -76,7 +76,7 @@
 
         &-text {
           margin-top: 20px;
-          
+
           &--title {
             font-weight: bold;
             font-size: 32px;
@@ -271,6 +271,27 @@
     .navbar-nav {
       padding: 0;
       transition: .2s;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    &-text {
+      margin-top: 20px;
+      margin-right: 10px;
+
+      &--title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+
+      &--description {
+        font-size: 12px;
+        font-weight: 300;
+      }
     }
   }
 
