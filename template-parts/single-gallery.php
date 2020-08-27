@@ -28,7 +28,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-12">
         <?php
         while ( have_posts() ) : ?>
         <div class="post-gallery">
@@ -168,9 +168,6 @@
         </div>
 
         <?php endwhile; // End of the loop. ?>
-      </div>
-      <div class="col-12 col-md-3">
-        <?php get_sidebar(); ?>
       </div>
     </div>
   </div>
