@@ -163,3 +163,16 @@
 		   ?>
     </div>
   </nav>
+
+	<?php
+	if( is_page( array('contacts', 'about-us'))) { ?>
+
+		<div class="banner">
+			<div class="container">
+				<div class="banner-img">
+					<img class="banner-img--img" src="http://uss.ua/wp-content/uploads/2015/04/photo_slider_new.jpg">
+				</div>
+			</div>
+		</div>
+
+	<?php } ?>

@@ -379,6 +379,24 @@ button:focus {
   }
 }
 
+// Banner
+
+.banner {
+  margin-top: 25px;
+  margin-bottom: -25px;
+
+  &-img {
+    width: 100%;
+    height: 300px;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 // Services
 
 .services-h {
