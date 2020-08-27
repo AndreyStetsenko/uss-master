@@ -240,7 +240,7 @@ button:focus{outline:0}
 .swiper-container .swiper-button-prev{right:auto;left:50px;width:45px;height:45px;background:rgba(255,255,255,0.8);border-radius:100%;-webkit-transition:.2s;transition:.2s}
 .swiper-container .swiper-button-prev:hover{left:48px}
 .swiper-container .swiper-button-prev::after{font-size:24px;font-weight:900;color:#393838}
-.banner{margin-top:25px;margin-bottom:-25px}
+.banner{margin-top:25px}
 .banner-img{width:100%;height:300px}
 .banner-img--img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
 .services-h{padding:50px 0}
@@ -689,7 +689,7 @@ ul{list-style:none}
 .navbar .navbar-brand img{width:50px;margin-right:0;margin-left:15px}
 .sidebar{margin-top:20px}
 .services-h{padding-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
-.services-links{border:0}
+.services-links{margin-top:25px;border:0}
 .services-links__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:25px}
 .services-links__list-item{border-right:none !important;font-size:16px !important;width:50%;text-align:left;padding:8px 10px !important}
 .services-tabs-item{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -717,7 +717,7 @@ ul{list-style:none}
 .footer-item-widget:last-child .footer-widget{margin:0}
 .footer-copyright{margin-top:0;padding-top:0}
 .l-separator{border-left:0}
-.contacts{text-align:center}
+.contacts{text-align:left}
 .contacts .btn{margin:0 auto}
 .gallery-list-item:hover{-webkit-box-shadow:none;box-shadow:none;-webkit-transform:scale(1);transform:scale(1)}
 .gallery-list-item__body{padding:35px 25px 0}
@@ -728,10 +728,12 @@ ul{list-style:none}
 .about-partners__list--item:last-child{margin:0}
 .about-questions-accordion .card-header button{padding:15px 40px 15px 15px}
 .about-questions-accordion .card-body{padding:5px 15px 10px 16px}
-.home-services .title-main--title{font-size:20px}
+.home-services .title-main--title{padding:15px;font-size:20px}
 .about-cont{text-align:left}
 .about-cont .btn{width:100%}
 .home-why .title-main--title{font-size:20px}
+.banner>.container{padding:0}
+.breadcrumbs{padding:25px 0}
 }@media(max-width:575.98px){.navbar>.container{padding-left:15px;padding-right:0}
 }@media(max-width:320px){.why-cont-item{width:100%}
 }

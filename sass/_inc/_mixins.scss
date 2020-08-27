@@ -239,6 +239,7 @@
   }
 
   .services-links {
+    margin-top: 25px;
     border: none;
 
     &__list {
@@ -402,7 +403,7 @@
   }
 
   .contacts {
-    text-align: center;
+    text-align: left;
 
     .btn {
       margin: 0 auto;
@@ -464,6 +465,7 @@
   .home-services {
     .title-main {
       &--title {
+        padding: 15px;
         font-size: 20px;
       }
     }
@@ -485,6 +487,16 @@
     .title-main--title {
       font-size: 20px;
     }
+  }
+
+  .banner {
+    > .container {
+      padding: 0;
+    }
+  }
+
+  .breadcrumbs {
+    padding: 25px 0;
   }
 
 }
