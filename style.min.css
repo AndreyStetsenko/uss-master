@@ -288,6 +288,7 @@ button:focus{outline:0}
 .price-services-item--more{text-align:center}
 .price-services-item--more a{font-size:14px;line-height:16px;-webkit-text-decoration-line:underline;text-decoration-line:underline;color:#393838;-webkit-transition:.1s;transition:.1s}
 .price-services-item--more a:hover{opacity:.9}
+.home-why{padding-bottom:0}
 .why-cont{width:100%;padding:80px;position:relative;background:-webkit-gradient(linear,left bottom,left top,from(rgba(40,40,40,0.75)),to(rgba(40,40,40,0.85))),url("http://uss.ua/wp-content/uploads/2015/04/photo_slider_new.jpg");background:linear-gradient(0,rgba(40,40,40,0.75),rgba(40,40,40,0.85)),url("http://uss.ua/wp-content/uploads/2015/04/photo_slider_new.jpg");background-position:0 0;background-size:cover;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}
 .why-cont-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .why-cont-item img{height:60px;-o-object-fit:contain;object-fit:contain}
@@ -688,7 +689,7 @@ ul{list-style:none}
 .navbar .navbar-brand--logo{color:#393838;font-size:24px;font-weight:700;margin-top:15px}
 .navbar .navbar-brand img{width:50px;margin-right:0;margin-left:15px}
 .sidebar{margin-top:20px}
-.services-h{padding-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+.services-h{padding-top:0;padding-bottom:0 !important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
 .services-links{margin-top:25px;border:0}
 .services-links__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin-bottom:25px}
 .services-links__list-item{border-right:none !important;font-size:16px !important;width:50%;text-align:left;padding:8px 10px !important}
