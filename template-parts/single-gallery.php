@@ -51,13 +51,20 @@
 
           <div class="post-gallery-gal">
             <div class="row">
-              <div class="col-12 col-md-4">
-                <div class="post-gallery-gal--img">
-                  <div class="post-gallery-gal--img__img">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="uss">
-                  </div>
-                </div>
-              </div>
+              <?php
+              //должно находится внутри цикла
+              if( has_post_thumbnail() ) {
+                echo '<div class="col-12 col-md-4">';
+                  echo '<div class="post-gallery-gal--img">';
+                    echo '<div class="post-gallery-gal--img__img">';
+                      echo '<img src="' . get_the_post_thumbnail_url() . '">';
+                    echo '</div>';
+                  echo '</div>';
+                echo '</div>';
+              }
+              else {
+              }
+              ?>
               <?php if ( have_rows( 'gallery-box' ) ) : ?>
               <div class="col-12 col-md-8">
                 <div class="post-gallery-imgs gallery-box">
@@ -84,10 +91,19 @@
               <span class="post-meta-item--left">Дата:</span>
               <span class="post-meta-item--right"><?php the_date('d F Y'); ?></span>
             </div>
-            <div class="post-meta-item">
-              <span class="post-meta-item--left">Теги:</span>
-              <span class="post-meta-item--right"><?php the_tags(''); ?></span>
-            </div>
+            <?php
+            //должно находится внутри цикла
+            if( has_tag() ) {
+              echo '<div class="post-meta-item">';
+                echo '<span class="post-meta-item--left">Теги:</span>';
+                echo '<div class="post-meta-item--tags">';
+                  echo the_tags('');
+                echo '</div>';
+              echo '</div>';
+            }
+            else {
+            }
+            ?>
           </div>
 
           <!-- <div class="post-pagination">

@@ -1608,7 +1608,30 @@ button:focus {
   margin-top: 25px;
 
   &-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    &--tags {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      a {
+        font-size: 14px;
+        color: $uss;
+        margin-left: 5px;
+        font-weight: 300;
+        line-height: 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
     &--left {
+      padding-right: 5px;
       font-weight: 500;
       font-size: 14px;
       color: $uss;
