@@ -26,25 +26,25 @@
 						</ul>
 					</div>
 				</div>
-				<div class="footer-item-widget col-12 col-md-5">
+				<!-- <div class="footer-item-widget col-12 col-md-5">
 					<div class="footer-widget">
 						<div class="footer-title">
 							<span class="footer-title--text">Меню</span>
-						</div>
+						</div> -->
 						<?php
-					   wp_nav_menu([
-							 'menu'            => 'footer',
-					     'theme_location'  => 'footer',
-					     'container'       => '',
-					     'container_id'    => '',
-					     'container_class' => '',
-					     'menu_id'         => false,
-					     'menu_class'      => 'footer-list',
-					     'depth'           => 1,
-					   ]);
+					   // wp_nav_menu([
+							//  'menu'            => 'footer',
+					   //   'theme_location'  => 'footer',
+					   //   'container'       => '',
+					   //   'container_id'    => '',
+					   //   'container_class' => '',
+					   //   'menu_id'         => false,
+					   //   'menu_class'      => 'footer-list',
+					   //   'depth'           => 1,
+					   // ]);
 					   ?>
-					</div>
-				</div>
+					<!-- </div>
+				</div> -->
 				<div class="footer-item-widget col-12 col-md-4">
 					<div class="footer-widget">
 						<div class="footer-social">
