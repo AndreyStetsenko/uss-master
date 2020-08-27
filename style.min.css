@@ -703,8 +703,8 @@ ul{list-style:none}
 .swiper-button-next::after,.swiper-button-prev::after{font-size:14px !important}
 .price-services-item{margin:25px auto}
 .why-cont{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:80px 25px}
-.why-cont-item{width:50%;height:150px;margin-bottom:55px}
-.why-cont-item:last-child{margin:0}
+.why-cont-item{width:calc(50% - 20px);height:150px;margin-bottom:55px;margin-left:10px;margin-right:10px}
+.why-cont-item--text{font-size:14px}
 .gallery-box-item span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .gallery-box-item span .icon{margin-top:10px}
 .gallery-box-item{width:calc(50% - 20px);margin-right:10px;margin-left:10px}
@@ -727,5 +727,7 @@ ul{list-style:none}
 .about-questions-accordion .card-body{padding:5px 15px 10px 16px}
 .home-services .title-main--title{font-size:20px}
 .about-cont .about-title{text-align:center}
+.home-why .title-main--title{font-size:20px}
 }@media(max-width:575.98px){.navbar>.container{padding-left:15px;padding-right:0}
+}@media(max-width:320px){.why-cont-item{width:100%}
 }

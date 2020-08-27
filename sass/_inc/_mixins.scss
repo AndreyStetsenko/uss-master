@@ -327,12 +327,14 @@
     padding: 80px 25px;
 
     &-item {
-      width: 50%;
+      width: calc(50% - 20px);
       height: 150px;
       margin-bottom: 55px;
+      margin-left: 10px;
+      margin-right: 10px;
 
-      &:last-child {
-        margin: 0;
+      &--text {
+        font-size: 14px;
       }
     }
   }
@@ -469,6 +471,12 @@
     }
   }
 
+  .home-why {
+    .title-main--title {
+      font-size: 20px;
+    }
+  }
+
 }
 
 // Экстрамалые девайсы («портретные телефоны», < 576px)
@@ -481,4 +489,12 @@
     }
   }
 
+}
+
+@media (max-width: 320px) {
+  .why-cont {
+    &-item {
+      width: 100%;
+    }
+  }
 }
