@@ -909,7 +909,7 @@ button:focus {
 // Contacts
 
 .contacts {
-  padding: 25px 0;
+  padding: 0px 0;
 
   &.contacts-form {
     display: flex;
@@ -932,7 +932,7 @@ button:focus {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
 
     .contacts-info-contacts {
       margin-bottom: 50px;
