@@ -131,7 +131,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .owl-next{right:15px}
 .owl-item .item{height:calc(100% - 50px)}
 .owl-item .item .price-services-item{height:100%}
-.breadcrumbs{padding:50px 0}
+.breadcrumbs{padding:25px 0}
 .breadcrumbs .page-title h1{color:#393838;font-size:28px;font-weight:300}
 .breadcrumbs-cont{font-size:14px;color:#393838;background:#f0f0f0;padding:15px;margin-top:20px;border-radius:3px}
 .breadcrumbs-cont--link{text-decoration:underline;color:#393838;-webkit-transition:.2s;transition:.2s}
@@ -508,7 +508,7 @@ h1,h2,h3,h4,h5,h6{margin:0}
 .owl-next{right:15px}
 .owl-item .item{height:calc(100% - 50px)}
 .owl-item .item .price-services-item{height:100%}
-.breadcrumbs{padding:50px 0}
+.breadcrumbs{padding:25px 0}
 .breadcrumbs .page-title h1{color:#393838;font-size:28px;font-weight:300}
 .breadcrumbs-cont{font-size:14px;color:#393838;background:#f0f0f0;padding:15px;margin-top:20px;border-radius:3px}
 .breadcrumbs-cont--link{text-decoration:underline;color:#393838;-webkit-transition:.2s;transition:.2s}
