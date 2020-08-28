@@ -249,8 +249,8 @@ button:focus {
   top: 0;
 
   .navbar-nav {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
     transition: .2s;
 
     &.nav-min {

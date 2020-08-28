@@ -220,7 +220,7 @@ button:focus{outline:0}
 .navbar .navbar-nav .dropdown-menu a{font-size:14px;color:#6f6f6f;background:transparent;-webkit-transition:.2s;transition:.2s}
 .navbar .navbar-nav .dropdown-menu a:hover{color:#333}
 .navbar-uss{background-color:#fff !important;position:-webkit-sticky;position:sticky;top:0}
-.navbar-uss .navbar-nav{padding-top:14px;padding-bottom:14px;-webkit-transition:.2s;transition:.2s}
+.navbar-uss .navbar-nav{padding-top:5px !important;padding-bottom:5px !important;-webkit-transition:.2s;transition:.2s}
 .navbar-uss .navbar-nav.nav-min{top:0 !important;position:-webkit-sticky !important;position:sticky !important;-webkit-transition:.2s;transition:.2s;padding-top:0 !important;padding-bottom:0 !important}
 .navbar-uss .navbar-nav li.dropdown>a:after{display:none}
 .navbar-uss .navbar-nav li>a{font-size:16px;padding-left:25px !important;padding-right:25px !important;color:#6f6f6f !important;font-weight:400;-webkit-transition:.2s;transition:.2s}
@@ -659,6 +659,7 @@ ul{list-style:none}
 .pagination-list .page-numbers:hover{background:#d3d3d3}
 .pagination-list .page-numbers.dots{background:#fff}
 .pagination-list .page-numbers.next,.pagination-list .page-numbers.prev{color:#737373}
+.home-services .title-main--title{padding:20px 0}
 @media(min-width:767.99px){.price-services-item:hover{margin:0 25px 50px 25px}
 .banner-services-img--img-mob{display:none}
 }@media(min-width:991.98px){.navbar .mob-show{display:none}
