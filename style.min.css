@@ -241,8 +241,8 @@ button:focus{outline:0}
 .swiper-container .swiper-button-prev:hover{left:48px}
 .swiper-container .swiper-button-prev::after{font-size:24px;font-weight:900;color:#393838}
 .banner{margin-top:25px}
-.banner-img{width:100%;height:300px}
-.banner-img--img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}
+.banner-img{width:100%;height:250px}
+.banner-img--img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:5px}
 .services-h{padding:50px 0}
 .services-links{margin-top:50px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
 .services-links__list{padding:15px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;overflow-x:auto}
@@ -256,6 +256,9 @@ button:focus{outline:0}
 .services-tabs-item__cont{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .services-tabs-item__cont--title{font-size:18px;line-height:28px;color:#393838;margin-bottom:10px}
 .services-tabs-item__cont--text{font-size:14px;line-height:21px;color:#393838;margin-bottom:20px}
+.banner-services{margin-top:25px}
+.banner-services-img{width:100%;height:250px}
+.banner-services-img--img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:5px}
 .img-aboutus img{max-width:290px}
 .about-title{font-size:24px;font-weight:bold;color:#393838;margin-bottom:15px}
 .about-text{font-size:18px}
@@ -657,6 +660,7 @@ ul{list-style:none}
 .pagination-list .page-numbers.dots{background:#fff}
 .pagination-list .page-numbers.next,.pagination-list .page-numbers.prev{color:#737373}
 @media(min-width:767.99px){.price-services-item:hover{margin:0 25px 50px 25px}
+.banner-services-img--img-mob{display:none}
 }@media(min-width:991.98px){.navbar .mob-show{display:none}
 .navbar .dropdown:hover>.dropdown-menu{display:block}
 .navbar-uss .navbar-brand{display:none}
@@ -733,7 +737,6 @@ ul{list-style:none}
 .about-cont{text-align:left}
 .about-cont .btn{width:100%}
 .home-why .title-main--title{font-size:20px}
-.banner>.container{padding:0}
 .breadcrumbs{padding:25px 0}
 .modal-content .modal-header{padding:15px 40px 15px 25px !important;text-align:left !important}
 .modal-content .modal-body form{margin-top:25px}
@@ -741,6 +744,7 @@ ul{list-style:none}
 .modal-content .modal-body .btn{width:100%}
 .contacts-form p{margin:0}
 .contacts-form .btn{width:100%}
+.banner-services-img--img-desc{display:none}
 }@media(max-width:575.98px){.navbar>.container{padding-left:15px;padding-right:0}
 }@media(max-width:320px){.why-cont-item{width:100%}
 }
