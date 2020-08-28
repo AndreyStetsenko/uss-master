@@ -26,6 +26,9 @@
 						</ul>
 					</div>
 				</div>
+				<div class="col-12 col-md-5">
+
+				</div>
 				<!-- <div class="footer-item-widget col-12 col-md-5">
 					<div class="footer-widget">
 						<div class="footer-title">
@@ -65,7 +68,7 @@
 				</div>
 				<div class="col-12">
 					<div class="footer-copyright">
-						<span>USS Security Copyright 2016</span>
+						<span>USS Security Copyright <?php echo the_date(' Y '); ?></span>
 					</div>
 				</div>
 			</div>
