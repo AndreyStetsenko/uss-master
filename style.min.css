@@ -735,6 +735,12 @@ ul{list-style:none}
 .home-why .title-main--title{font-size:20px}
 .banner>.container{padding:0}
 .breadcrumbs{padding:25px 0}
+.modal-content .modal-header{padding:15px 40px 15px 25px !important;text-align:left !important}
+.modal-content .modal-body form{margin-top:25px}
+.modal-content .modal-body p{margin:0}
+.modal-content .modal-body .btn{width:100%}
+.contacts-form p{margin:0}
+.contacts-form .btn{width:100%}
 }@media(max-width:575.98px){.navbar>.container{padding-left:15px;padding-right:0}
 }@media(max-width:320px){.why-cont-item{width:100%}
 }

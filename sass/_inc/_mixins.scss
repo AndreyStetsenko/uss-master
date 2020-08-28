@@ -500,6 +500,37 @@
     padding: 25px 0;
   }
 
+  .modal-content {
+    .modal-header {
+      padding: 15px 40px 15px 25px!important;
+      text-align: left!important;
+    }
+
+    .modal-body {
+      form {
+        margin-top: 25px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .contacts-form {
+    p {
+      margin: 0;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+  }
+
 }
 
 // Экстрамалые девайсы («портретные телефоны», < 576px)
