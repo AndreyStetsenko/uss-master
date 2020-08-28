@@ -26,8 +26,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-1"></div>
-      <div class="col-12 col-md-10">
+      <div class="col-12 col-md-12">
         <div class="gallery-list row">
 
           <?php /*
@@ -87,7 +86,6 @@
           ?>
         </div>
       </div>
-      <div class="col-12 col-md-1"></div>
     </div>
   </div>
 </section>
