@@ -13,14 +13,12 @@
     <div class="container">
       <div class="banner-services-img">
     	<?php while ( have_rows( 'services-banners-imgs' ) ) : the_row(); ?>
-        <?php $services_main_img_desc = get_field( 'services-main-img-desc' ); ?>
-        <?php if ( $services_main_img_desc ) : ?>
-          <img class="banner-services-img--img banner-services-img--img-desc" src="<?php echo esc_url( $services_main_img_desc['url'] ); ?>" alt="<?php echo esc_attr( $services_main_img_desc['alt'] ); ?>" />
-        <?php endif; ?>
-        <?php $services_main_img_mob = get_field( 'services-main-img-mob' ); ?>
-        <?php if ( $services_main_img_mob ) : ?>
-          <img class="banner-services-img--img banner-services-img--img-mob" src="<?php echo esc_url( $services_main_img_mob['url'] ); ?>" alt="<?php echo esc_attr( $services_main_img_mob['alt'] ); ?>" />
-        <?php endif; ?>
+    		<?php if ( get_sub_field( 'services-main-img-desc' ) ) : ?>
+    			<img class="banner-services-img--img banner-services-img--img-desc" src="<?php the_sub_field( 'services-main-img-desc' ); ?>" />
+    		<?php endif ?>
+    		<?php if ( get_sub_field( 'services-main-img-mob' ) ) : ?>
+    			<img class="banner-services-img--img banner-services-img--img-mob" src="<?php the_sub_field( 'services-main-img-mob' ); ?>" />
+    		<?php endif ?>
     	<?php endwhile; ?>
     </div>
   </div>
