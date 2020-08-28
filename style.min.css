@@ -400,7 +400,7 @@ button:focus{outline:0}
 .about-mission-cont__list--text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .about-mission-cont__list--title{font-weight:500;font-size:18px}
 .about-mission-cont__list--description{margin-top:5px;font-weight:300;font-size:18px}
-.about-values__list{background:#f0f0f0;padding:15px;border-radius:10px}
+.about-values__list{margin-top:25px !important;background:#f0f0f0;padding:15px;border-radius:10px}
 .about-values__list--item{margin-bottom:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .about-values__list--item:last-child{margin-bottom:0}
 .about-values__list--item .icon{margin-top:4px;margin-right:10px;color:#393838}

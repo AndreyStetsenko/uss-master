@@ -52,29 +52,26 @@
             </div>
           </div>
 
-          <?php if ( have_rows( 'about-questions' ) ) : ?>
-          <div class="about-questions">
-            <div class="accordion about-questions-accordion about-cont" id="accordionAboutQuestions">
-            	<?php while ( have_rows( 'about-questions' ) ) : the_row(); $q_card = $q_card + 1; ?>
-                <div class="card">
-                  <div class="card-header" id="heading<?php echo $q_card; ?>">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse<?php echo $q_card; ?>" aria-expanded="false" aria-controls="collapse<?php echo $q_card; ?>">
-                      <?php the_sub_field( 'title' ); ?>
-                    </button>
-                    <i class="icon fas fa-chevron-down"></i>
-                  </div>
-                  <div id="collapse<?php echo $q_card; ?>" class="collapse" aria-labelledby="heading<?php echo $q_card; ?>" data-parent="#accordionAboutQuestions">
-                    <div class="card-body">
-                    <?php the_sub_field( 'description' ); ?>
-                    </div>
-                  </div>
-                </div>
-            	<?php endwhile; ?>
+          <div class="about-values__list about-cont">
+            <div class="about-values__list--item">
+              <div class="about-values__list--text">
+                <span class="about-values__list--title">Продвинутые технологии</span>
+                <span class="about-values__list--description">USS Security имеет собственный Пульт Централизованной Охраны, патрульные автомобили, а также квалифицированный персонал технических специалистов и штат надежных и проверенных охранников общей численностью более 1300 человек.</span>
+              </div>
+            </div>
+            <div class="about-values__list--item">
+              <div class="about-values__list--text">
+                <span class="about-values__list--title">Охрана для частных лиц и не только</span>
+                <span class="about-values__list--description">USS Security оказывает охранные услуги как физическим лицам (охранная сигнализация, видеонаблюдение и физическая охрана час��ных домов и квартир), так и различным предприятиям и коммерческим структурам (техническая охрана, видеонаблюдение, патрулирование, физическая охрана и сопровождение грузов).</span>
+              </div>
+            </div>
+            <div class="about-values__list--item">
+              <div class="about-values__list--text">
+                <span class="about-values__list--title">Еропейские стандарты качества</span>
+                <span class="about-values__list--description">В своей работе USS Security применяет лучшие наработки крупных международных компаний, работающих в сфере охранного бизнеса. Вся наша деятельность базируется на европейском подходе к качеству. Наши услуги полностью отвечают современным требованиям и стандартам, основой которых является не только высокое качество, но и профессиональная этика, основанная на соблюдении принципа конфиденциальности.</span>
+              </div>
             </div>
           </div>
-          <?php else : ?>
-          	<?php // no rows found ?>
-          <?php endif; ?>
 
           <div class="about-mission">
             <h3 class="title-3 about-title">Миссия и кредо</h3>
