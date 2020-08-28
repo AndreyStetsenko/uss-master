@@ -68,11 +68,7 @@
 				</div>
 				<div class="col-12">
 					<div class="footer-copyright">
-<<<<<<< HEAD
 						<span>USS Security Copyright <?php echo the_date(' Y '); ?></span>
-=======
-						<span>USS Security Copyright 2020</span>
->>>>>>> 4f71358913d6cd97d9d9b9e1672b8ff55b2ece2f
 					</div>
 				</div>
 			</div>
