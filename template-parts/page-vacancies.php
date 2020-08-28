@@ -26,7 +26,7 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-12">
         <div class="main-content">
 
           <h3 class="title-3 mb-4">Приглашаем на постоянную работу в охранную компанию USS Security</h3>
@@ -78,9 +78,6 @@
           </div>
 
         </div>
-      </div>
-      <div class="col-12 col-md-3">
-        <?php get_sidebar(); ?>
       </div>
     </div>
   </div>
