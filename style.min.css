@@ -745,6 +745,7 @@ ul{list-style:none}
 .contacts-form p{margin:0}
 .contacts-form .btn{width:100%}
 .banner-services-img--img-desc{display:none}
+.page-aboutus-sidebar{display:none}
 }@media(max-width:575.98px){.navbar>.container{padding-left:15px;padding-right:0}
 }@media(max-width:320px){.why-cont-item{width:100%}
 }

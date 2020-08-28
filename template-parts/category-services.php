@@ -56,7 +56,7 @@
 
         </div>
       </div>
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-3 page-aboutus-sidebar">
         <?php get_sidebar(); ?>
       </div>
     </div>
