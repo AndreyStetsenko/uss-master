@@ -89,9 +89,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
   <div class="title-main">
     <h2 class="title-main--title"><?php the_field( 'home-price-title' ); ?></h2>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
+  <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+      <!-- <div class="col-12"> -->
 
         <div class="price-services">
 
@@ -160,9 +160,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
         </div>
 
-      </div>
-    </div>
-  </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
 </section>
 
 <?php if ( have_rows( 'home-why' ) ) : ?>

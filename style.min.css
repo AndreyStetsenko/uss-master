@@ -265,9 +265,10 @@ button:focus{outline:0}
 .about-list{padding:25px 0 20px}
 .about-list li{margin-bottom:10px;font-size:14px;line-height:20px}
 .about-list li .icon{margin-right:7px;color:#b0976d}
-.price-services{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.price-services-item{width:290px;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:25px;padding:20px 20px;background:#fefefe;-webkit-box-shadow:3px 7px 20px rgba(0,0,0,0.15);box-shadow:3px 7px 20px rgba(0,0,0,0.15);border-radius:6px;border:1px solid #fefefe;-webkit-transition:.4s;transition:.4s}
-.price-services-item:hover{border:1px solid #b0976d;-webkit-box-shadow:3px 7px 25px rgba(0,0,0,0.2);box-shadow:3px 7px 25px rgba(0,0,0,0.2)}
+.price-services{margin:0 auto;max-width:1120px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.price-services .owl-carousel .owl-item{padding:0 10px}
+.price-services-item{width:100%;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:25px 0;padding:20px 20px;background:#fefefe;border-radius:6px;border:1px solid #b5b5b5;-webkit-transition:.4s;transition:.4s}
+.price-services-item:hover{border:1px solid #b0976d}
 .price-services-item.sale{border:1px solid #b0976d !important}
 .price-services-item.sale .price-services-sale{display:-webkit-box;display:-ms-flexbox;display:flex}
 .price-services-item.sale .btn-gold{background:#b0976d;color:#fff}
@@ -457,10 +458,10 @@ button:focus{outline:0}
 .post-last__items--item-text{display:block;margin-top:5px;font-weight:300;font-size:14px;text-decoration:none;color:#393838;-webkit-transition:.1s;transition:.1s}
 .post-last__items--item-text:hover{color:#b0976d}
 .post-last__items--item hr{margin-top:15px;margin-bottom:0;background:#e9e9e9}
-footer{width:100%;padding:50px 0 25px;background-color:#282828;position:absolute}
+footer{width:100%;padding:25px 0 25px;background-color:#282828;position:absolute}
 footer .footer-widget{height:100%}
 footer .footer-widget .footer-title{margin-bottom:20px}
-footer .footer-widget .footer-title--text{color:#fff;font-weight:500;font-size:24px;line-height:28px}
+footer .footer-widget .footer-title--text{color:#fff;font-weight:300;font-size:18px;line-height:28px}
 footer .footer-widget .footer-list{max-height:120px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap}
 footer .footer-widget .footer-list li{margin-bottom:5px;line-height:19px;max-width:200px}
 footer .footer-widget .footer-list li:last-child{margin-bottom:0}
@@ -472,13 +473,13 @@ footer .footer-widget .footer-list ul li{margin-bottom:5px;line-height:19px;max-
 footer .footer-widget .footer-list ul li:last-child{margin-bottom:0}
 footer .footer-widget .footer-list ul li a{color:#fff;font-size:13px}
 footer .footer-widget .footer-list ul li a .icon{margin-right:10px}
-footer .footer-widget .footer-social{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+footer .footer-widget .footer-social{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 footer .footer-widget .footer-social-we{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:20px}
 footer .footer-widget .footer-social-we--title{color:#fff;font-weight:300;font-size:18px;line-height:19px;margin-right:20px}
 footer .footer-widget .footer-social-we--icons a .icon{font-size:20px;color:#fff;margin:0 5px;-webkit-transition:.2s;transition:.2s}
 footer .footer-widget .footer-social-we--icons a .icon:hover{opacity:.7}
-footer .footer-copyright{text-align:center;margin-top:50px}
-footer .footer-copyright span{color:#fff;font-weight:300;font-size:16px}
+footer .footer-copyright{text-align:center;margin-top:25px}
+footer .footer-copyright span{color:#fff;font-weight:300;font-size:14px}
 .c-gold{color:#b0976d !important}
 .l-separator{border-left:1px solid #b0976d}
 .all-center{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -660,7 +661,7 @@ ul{list-style:none}
 .pagination-list .page-numbers.dots{background:#fff}
 .pagination-list .page-numbers.next,.pagination-list .page-numbers.prev{color:#737373}
 .home-services .title-main--title{padding:20px 0}
-@media(min-width:767.99px){.price-services-item:hover{margin:0 25px 50px 25px}
+@media(min-width:767.99px){.price-services-item:hover{margin:0 25px 50px 0}
 .banner-services-img--img-mob{display:none}
 }@media(min-width:991.98px){.navbar .mob-show{display:none}
 .navbar .dropdown:hover>.dropdown-menu{display:block}
@@ -734,7 +735,7 @@ ul{list-style:none}
 .about-partners__list--item:last-child{margin:0}
 .about-questions-accordion .card-header button{padding:15px 40px 15px 15px}
 .about-questions-accordion .card-body{padding:5px 15px 10px 16px}
-.home-services .title-main--title{padding:15px;font-size:20px}
+.home-services .title-main--title{padding:15px !important;font-size:20px}
 .about-cont{text-align:left}
 .about-cont .btn{width:100%}
 .home-why .title-main--title{font-size:20px}

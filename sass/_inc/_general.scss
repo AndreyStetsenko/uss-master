@@ -543,29 +543,37 @@ button:focus {
 // Price Services
 
 .price-services {
+  margin: 0 auto;
+  max-width: 1120px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 
+  .owl-carousel {
+    .owl-item {
+      padding: 0 10px;
+    }
+  }
+
   &-item {
-    width: 290px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 25px;
+    margin: 25px 0;
     padding: 20px 20px;
     background: #FEFEFE;
-    box-shadow: 3px 7px 20px rgba(0,0,0,0.15);
+    // box-shadow: 3px 7px 20px rgba(0,0,0,0.15);
     border-radius: 6px;
-    border: 1px solid #FEFEFE;
+    border: 1px solid $dark-gray;
     transition: .4s;
 
     &:hover {
       border: 1px solid $gold;
-      box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.20);
+      // box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.20);
     }
 
     &.sale {
@@ -1824,7 +1832,7 @@ button:focus {
 
 footer {
   width: 100%;
-  padding: 50px 0 25px;
+  padding: 25px 0 25px;
   background-color: $uss-d;
   position: absolute;
 
@@ -1836,8 +1844,8 @@ footer {
 
       &--text {
         color: #fff;
-        font-weight: 500;
-        font-size: 24px;
+        font-weight: 300;
+        font-size: 18px;
         line-height: 28px;
       }
     }
@@ -1905,7 +1913,7 @@ footer {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       flex-direction: column;
 
       &-we {
@@ -1942,12 +1950,12 @@ footer {
 
   .footer-copyright {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
 
     span {
       color: #fff;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }

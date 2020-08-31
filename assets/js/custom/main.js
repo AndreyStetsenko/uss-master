@@ -64,41 +64,20 @@ $(function(){
       loop: true,
       nav: true,
       stagePadding: 50,
-      margin: 50,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        568: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 3
-        }
-      }
+      margin: 30,
+      items: 1,
+      responsiveClass: true
     })
   } else {
     $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
       autoplay: false,
-      loop: false,
-      nav: false,
-      margin: 50,
-      responsiveClass: true,
       responsive: {
         0: {
           items: 1
         },
-        568: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
+        900: {
           items: 3
         }
       }
