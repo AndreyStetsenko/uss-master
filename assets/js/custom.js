@@ -52,7 +52,7 @@ $(function () {
   if ($(window).width() < 768) {
     $('.owl-carousel').owlCarousel({
       autoplay: false,
-      loop: true,
+      loop: false,
       nav: true,
       stagePadding: 50,
       margin: 30,
@@ -61,7 +61,7 @@ $(function () {
     });
   } else {
     $('.owl-carousel').owlCarousel({
-      loop: true,
+      loop: false,
       margin: 30,
       autoplay: false,
       responsive: {
